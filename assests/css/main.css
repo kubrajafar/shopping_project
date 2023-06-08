@@ -444,78 +444,97 @@ footer .myContainer .footer-container .min-footer p span:hover {
   padding-top: 50px;
   display: flex;
   align-items: center;
-}
-#trending-section .myContainer .trending-container .trending-content .left-card {
-  max-width: 304px;
-  min-height: 620px;
   width: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-#trending-section .myContainer .trending-container .trending-content .left-card img {
-  max-width: 304px;
-  min-height: 620px;
+#trending-section .myContainer .trending-container .trending-content .cards-menu {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding-bottom: 70px;
 }
-#trending-section .myContainer .trending-container .trending-content .left-card .card-text {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-}
-#trending-section .myContainer .trending-container .trending-content .left-card .card-text h2 {
-  color: #ffffff;
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 13px;
-}
-#trending-section .myContainer .trending-container .trending-content .left-card .card-text a {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  border-bottom: 2px solid #fff;
-}
-#trending-section .myContainer .trending-container .trending-content .right-card {
-  width: 100%;
-}
-#trending-section .myContainer .trending-container .trending-content .right-card .cards-menu {
-  width: 100%;
-}
-#trending-section .myContainer .trending-container .trending-content .right-card .cards-menu ul {
+#trending-section .myContainer .trending-container .trending-content .cards-menu ul {
   display: flex;
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
 }
-#trending-section .myContainer .trending-container .trending-content .right-card .cards-menu ul li {
+#trending-section .myContainer .trending-container .trending-content .cards-menu ul li {
   font-size: 21px;
   color: #b2b2b2;
   letter-spacing: 0.5px;
   cursor: pointer;
 }
-#trending-section .myContainer .trending-container .trending-content .right-card .cards-slider {
+#trending-section .myContainer .trending-container .trending-content .cards-slider {
   width: 100%;
   display: flex;
+  gap: 20px;
+  margin: 0 auto;
+  align-items: center;
 }
-#trending-section .myContainer .trending-container .trending-content .right-card .cards-slider .slider-card {
-  max-width: 200px;
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card {
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
 }
-#trending-section .myContainer .trending-container .trending-content .right-card .cards-slider .slider-card .card-img {
-  max-width: 200px;
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-img {
+  max-width: 300px;
+  width: 100%;
 }
-#trending-section .myContainer .trending-container .trending-content .right-card .cards-slider .slider-card .card-content {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content {
   font-family: "Mulish", sans-serif;
+  padding-top: 30px;
+  border: 1px solid #b2b2b2;
 }
-#trending-section .myContainer .trending-container .trending-content .right-card .cards-slider .slider-card .card-content .card-product-name {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-product-name {
   font-size: 18px;
   color: #111111;
   font-weight: 400;
 }
-#trending-section .myContainer .trending-container .trending-content .right-card .cards-slider .slider-card .card-content .card-product-price {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-product-price {
   color: #e7ab3c;
   font-size: 20px;
   font-weight: 700;
+  padding-bottom: 15px;
+}
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d5d4d2;
+}
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .wishlist-btn {
+  width: 50%;
+  height: 50px;
+  border-right: 1px solid #d5d4d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .wishlist-btn i {
+  font-size: 30px;
+}
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .wishlist-btn:hover {
+  background-color: #e7ab3c;
+}
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .basket-btn {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .basket-btn i {
+  font-size: 30px;
+}
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .basket-btn:hover {
+  background-color: #e7ab3c;
 }
 
 #season-fashion .myContainer .season-fashion-container {
@@ -725,11 +744,11 @@ footer .myContainer .footer-container .min-footer p span:hover {
   }
 }
 @media screen and (max-width: 420px) {
-  #season-fashion .myContainer .season-fashion-container .season-img {
-    height: 250px;
+  #season-fashion .myContainer .season-fashion-container .season-content .season-timer .timer p {
+    font-size: 23px;
   }
-  #season-fashion .myContainer .season-fashion-container .season-img img {
-    height: 250px;
+  #season-fashion .myContainer .season-fashion-container .season-content .season-timer .timer span {
+    font-size: 13px;
   }
 }
 #login-section .mycontainer .login-container {

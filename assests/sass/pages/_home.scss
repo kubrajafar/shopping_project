@@ -223,73 +223,95 @@
         padding-top: 50px;
         display: flex;
         align-items: center;
-        .left-card {
-          max-width: 304px;
-          min-height: 620px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .cards-menu {
           width: 100%;
-          position: relative;
-          img {
-            max-width: 304px;
-            min-height: 620px;
-            width: 100%;
-            object-fit: cover;
-          }
-          .card-text {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            left: 50%;
-            top: 50%;
-            h2 {
-              color: #ffffff;
-              font-size: 48px;
-              font-weight: 700;
-              margin-bottom: 13px;
-            }
-            a {
-              color: #ffffff;
-              font-size: 18px;
-              font-weight: 500;
-              border-bottom: 2px solid #fff;
+          padding-bottom: 70px;
+          ul {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+              font-size: 21px;
+              color: #b2b2b2;
+              letter-spacing: 0.5px;
+              cursor: pointer;
             }
           }
         }
-        .right-card {
+        .cards-slider {
           width: 100%;
-          .cards-menu {
+          display: flex;
+          gap: 20px;
+          margin: 0 auto;
+          align-items: center;
+          .slider-card {
+            max-width: 300px;
             width: 100%;
-            ul {
-              display: flex;
-              gap: 15px;
-              justify-content: center;
-              flex-wrap: wrap;
-              li {
-                font-size: 21px;
-                color: #b2b2b2;
-                letter-spacing: 0.5px;
-                cursor: pointer;
-              }
+            text-align: center;
+            .card-img {
+              max-width: 300px;
+              width: 100%;
             }
-          }
-          .cards-slider {
-            width: 100%;
-            display: flex;
-
-            .slider-card {
-              max-width: 200px;
-              .card-img {
-                max-width: 200px;
+            .card-content {
+              font-family: "Mulish", sans-serif;
+              padding-top: 30px;
+              border: 1px solid #b2b2b2;
+              .card-product-name {
+                font-size: 18px;
+                color: #111111;
+                font-weight: 400;
               }
-              .card-content {
-                font-family: "Mulish", sans-serif;
-                .card-product-name {
-                  font-size: 18px;
-                  color: #111111;
-                  font-weight: 400;
+              .card-product-price {
+                color: #e7ab3c;
+                font-size: 20px;
+                font-weight: 700;
+                padding-bottom: 15px;
+              }
+              .card-btns {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 1px solid #d5d4d2;
+                .wishlist-btn {
+                  width: 50%;
+                  height: 50px;
+                  border-right: 1px solid #d5d4d2;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transition: 0.5s;
+                  cursor: pointer;
+
+                  i {
+                    font-size: 30px;
+                  }
+                  &:hover {
+                    background-color: #e7ab3c;
+                  }
                 }
-                .card-product-price {
-                  color: #e7ab3c;
-                  font-size: 20px;
-                  font-weight: 700;
+                .basket-btn {
+                  width: 50%;
+                  height: 50px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transition: 0.5s;
+                  cursor: pointer;
+
+                  i {
+                    font-size: 30px;
+                  }
+                  &:hover {
+                    background-color: #e7ab3c;
+                  }
                 }
               }
             }
@@ -619,11 +641,16 @@
   #season-fashion {
     .myContainer {
       .season-fashion-container {
-        .season-img {
-          height: 250px;
-
-          img {
-            height: 250px;
+        .season-content {
+          .season-timer {
+            .timer {
+              p {
+                font-size: 23px;
+              }
+              span {
+                font-size: 13px;
+              }
+            }
           }
         }
       }

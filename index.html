@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" type="image/x-icon" href="./assests/img/head_logo.jpg">
    <!-- css -->
    <link rel="stylesheet" href="./assests/css/main.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
@@ -50,18 +51,19 @@
                <div class="nav-menu">
                   <ul>
                      <li><a href="./index.html">HOME</a></li>
-                     <li><a href="#">WOMEN'S</a></li>
-                     <li><a href="#">MEN'S</a></li>
-                     <li><a href="#">BABY</a></li>
-                     <li><a href="#">BLOG</a></li>
-                     <li><a href="#">CONTACT</a></li>
+                     <li><a href="./women.html">WOMEN'S</a></li>
+                     <li><a href="./men.html">MEN'S</a></li>
+                     <li><a href="./baby.html">BABY</a></li>
+                     <li><a href="./blog.html">BLOG</a></li>
+                     <li><a href="./concat.html">CONTACT</a></li>
                   </ul>
                </div>
                <div class="nav-right">
                   <div class="nav-icons">
-                     <div class="wishlist"><i class="fa-solid fa-heart"></i></div>
-                     <div class="login"><a href="./login.html"><i class="fa-solid fa-user"></i></a></div>
-                     <div class="basket"><i class="fa-solid fa-cart-shopping"></i></div>
+                     <div class="wishlist"><a href="./basket.html"><i class="fa-solid fa-heart"></i></a></div>
+                     <div class="login"><a href="./login.html" target="_blank"><i class="fa-solid fa-user"></i></a>
+                     </div>
+                     <div class="basket"><a href="./wishlist.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
                   </div>
                   <div class="nav-hamburger">
                      <i class="fa-solid fa-bars"></i>
@@ -92,7 +94,7 @@
                         facilis neque nulla earum.</p>
                   </div>
                   <div class="slider-content-btn">
-                     <a href="#">SHOP NOW</a>
+                     <a href="./men.html">SHOP NOW</a>
                   </div>
                </div>
 
@@ -111,7 +113,7 @@
                         facilis neque nulla earum.</p>
                   </div>
                   <div class="slider-content-btn">
-                     <a href="#">SHOP NOW</a>
+                     <a href="./women.html">SHOP NOW</a>
                   </div>
                </div>
             </div>
@@ -127,21 +129,21 @@
                   <img src="./assests/img/items1.jpg">
                   <div class="item-details">
                      <h4>Men's Fashion</h4>
-                     <a href="#">Shop Now</a>
+                     <a href="./men.html">Shop Now</a>
                   </div>
                </div>
                <div class="women-fashion fashion-item">
                   <img src="./assests/img/items2.jpg">
                   <div class="item-details">
                      <h4>Women's Fashion</h4>
-                     <a href="#">Shop Now</a>
+                     <a href="./women.html">Shop Now</a>
                   </div>
                </div>
                <div class="men-fashion fashion-item">
                   <img src="./assests/img/items3.jpg">
                   <div class="item-details">
                      <h4>Baby's Fashion</h4>
-                     <a href="#">Shop Now</a>
+                     <a href="./baby.html">Shop Now</a>
                   </div>
                </div>
             </div>
@@ -165,26 +167,20 @@
                   </div>
                </div>
                <div class="trending-content">
-                  <div class="left-card">
-                     <img src="./assests/img/man-large.jpg">
-                     <div class="card-text">
-                        <h2>Men’s</h2>
-                        <a href="#">Discover More</a>
-                     </div>
-                  </div>
-                  <div class="right-card">
-                     <div class="cards-menu">
-                        <ul>
-                           <li><a href="#">Clothings</a></li>
-                           <li><a href="#">HandBag</a></li>
-                           <li><a href="#">Shoes</a></li>
-                           <li><a href="#">Accessories</a></li>
-                        </ul>
-                     </div>
-                     <div class="cards-slider">
 
-                     </div>
+
+                  <div class="cards-menu">
+                     <ul>
+                        <li><a href="#">Clothings</a></li>
+                        <li><a href="#">HandBag</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Accessories</a></li>
+                     </ul>
                   </div>
+                  <div class="cards-slider">
+
+                  </div>
+
                </div>
             </div>
          </div>
@@ -260,7 +256,6 @@
       </section>
       <hr>
    </main>
-
 
    <footer>
       <div class="myContainer">
@@ -346,11 +341,7 @@
 
 
 
-      $('.cards-slider').slick({
-         infinite: true,
-         slidesToShow: 3,
-         slidesToScroll: 3
-      });
+
    </script>
 </body>
 
