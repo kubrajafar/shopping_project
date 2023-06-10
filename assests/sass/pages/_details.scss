@@ -1,0 +1,46 @@
+#details-section {
+  .myContainer {
+    .details-container {
+      width: 100%;
+      font-family: "Jost", sans-serif;
+      .details-card {
+        width: 100%;
+        padding: 100px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 50px;
+        .details-img {
+          max-width: 400px;
+          width: 100%;
+        }
+        .details-content {
+          max-width: 500px;
+          width: 100%;
+          .product_detail_name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2a2a2a;
+            margin-bottom: 10px;
+          }
+          .product_detail_price {
+            font-size: 44px;
+            line-height: 28px;
+            color: #e7ab3c;
+            font-weight: 600;
+          }
+          .product_detail_type {
+            color: #2f7dfc;
+          }
+          .product_detail_about {
+            font-family: "Roboto", sans-serif;
+            line-height: 2;
+            font-size: 15px;
+            color: #606060;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

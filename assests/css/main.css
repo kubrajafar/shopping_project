@@ -71,7 +71,7 @@ nav .nav-container .nav-right .nav-hamburger i {
   }
   nav .nav-container .nav-menu.active {
     position: absolute;
-    z-index: 1;
+    z-index: 4;
     display: block;
     width: 100%;
     height: 300px;
@@ -473,39 +473,40 @@ footer .myContainer .footer-container .min-footer p span:hover {
   margin: 0 auto;
   align-items: center;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card {
-  max-width: 300px;
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card {
+  max-width: 280px;
   width: 100%;
   text-align: center;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-img {
-  max-width: 300px;
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-img {
+  max-width: 280px;
   width: 100%;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content {
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content {
   font-family: "Mulish", sans-serif;
-  padding-top: 30px;
+  padding-top: 17px;
   border: 1px solid #b2b2b2;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-product-name {
-  font-size: 18px;
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-product-name {
+  font-size: 16px;
   color: #111111;
   font-weight: 400;
+  padding-bottom: 10px;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-product-price {
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-product-price {
   color: #e7ab3c;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   padding-bottom: 15px;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns {
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #d5d4d2;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .wishlist-btn {
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .wishlist-btn {
   width: 50%;
   height: 50px;
   border-right: 1px solid #d5d4d2;
@@ -515,13 +516,14 @@ footer .myContainer .footer-container .min-footer p span:hover {
   transition: 0.5s;
   cursor: pointer;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .wishlist-btn i {
-  font-size: 30px;
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .wishlist-btn i {
+  font-size: 24px;
+  color: #706c6c;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .wishlist-btn:hover {
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .wishlist-btn:hover {
   background-color: #e7ab3c;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .basket-btn {
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .basket-btn {
   width: 50%;
   height: 50px;
   display: flex;
@@ -530,10 +532,11 @@ footer .myContainer .footer-container .min-footer p span:hover {
   transition: 0.5s;
   cursor: pointer;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .basket-btn i {
-  font-size: 30px;
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .basket-btn i {
+  font-size: 24px;
+  color: #706c6c;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .basket-btn:hover {
+#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .basket-btn:hover {
   background-color: #e7ab3c;
 }
 
@@ -668,6 +671,12 @@ footer .myContainer .footer-container .min-footer p span:hover {
 }
 
 @media screen and (max-width: 992px) {
+  #fashion-slider .slider-container .slick-prev {
+    display: none !important;
+  }
+  #fashion-slider .slider-container .slick-next {
+    display: none !important;
+  }
   #category-section .myContainer .category-container {
     grid-template-columns: auto auto;
   }
@@ -859,4 +868,242 @@ footer .myContainer .footer-container .min-footer p span:hover {
   cursor: pointer;
   font-size: 16px;
   border-radius: 0px;
+}
+
+#wishlist-section .myContainer .wishlist-container {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+}
+#wishlist-section .myContainer .wishlist-container .empty-wishlist {
+  width: 100%;
+}
+#wishlist-section .myContainer .wishlist-container .empty-wishlist .wishlist-heart {
+  background-color: #fff0e4;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wishlist-section .myContainer .wishlist-container .empty-wishlist .wishlist-heart i {
+  font-size: 30px;
+  color: #e7ab3c;
+}
+#wishlist-section .myContainer .wishlist-container .empty-wishlist h4 {
+  font-size: 18px;
+  color: #e7ab3c;
+  margin-bottom: 10px;
+}
+#wishlist-section .myContainer .wishlist-container .empty-wishlist p {
+  font-size: 14px;
+  margin-bottom: 55px;
+}
+#wishlist-section .myContainer .wishlist-container .empty-wishlist a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #e7ab3c;
+  padding: 15px 40px;
+}
+
+.shopPage .myContainer .shopPage-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 100px 0;
+}
+.shopPage .myContainer .shopPage-container .slider-card {
+  max-width: 280px;
+  width: 100%;
+  text-align: center;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-img {
+  max-width: 280px;
+  width: 100%;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content {
+  font-family: "Mulish", sans-serif;
+  padding-top: 17px;
+  border: 1px solid #b2b2b2;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content .card-product-name {
+  font-size: 16px;
+  color: #111111;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content .card-product-price {
+  color: #e7ab3c;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content .card-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d5d4d2;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content .card-btns .wishlist-btn {
+  width: 50%;
+  height: 50px;
+  border-right: 1px solid #d5d4d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content .card-btns .wishlist-btn i {
+  font-size: 24px;
+  color: #706c6c;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content .card-btns .wishlist-btn:hover {
+  background-color: #e7ab3c;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content .card-btns .basket-btn {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content .card-btns .basket-btn i {
+  font-size: 24px;
+  color: #706c6c;
+}
+.shopPage .myContainer .shopPage-container .slider-card .card-content .card-btns .basket-btn:hover {
+  background-color: #e7ab3c;
+}
+.shopPage .myContainer .listPage {
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+}
+.shopPage .myContainer .listPage li {
+  background-color: rgba(255, 255, 255, 0.7411764706);
+  padding: 20px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.shopPage .myContainer .listPage .active {
+  background-color: #b192ef;
+  color: #fff;
+}
+
+#details-section .myContainer .details-container {
+  width: 100%;
+  font-family: "Jost", sans-serif;
+}
+#details-section .myContainer .details-container .details-card {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+#details-section .myContainer .details-container .details-card .details-img {
+  max-width: 400px;
+  width: 100%;
+}
+#details-section .myContainer .details-container .details-card .details-content {
+  max-width: 500px;
+  width: 100%;
+}
+#details-section .myContainer .details-container .details-card .details-content .product_detail_name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+#details-section .myContainer .details-container .details-card .details-content .product_detail_price {
+  font-size: 44px;
+  line-height: 28px;
+  color: #e7ab3c;
+  font-weight: 600;
+}
+#details-section .myContainer .details-container .details-card .details-content .product_detail_type {
+  color: #2f7dfc;
+}
+#details-section .myContainer .details-container .details-card .details-content .product_detail_about {
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  font-size: 15px;
+  color: #606060;
+  font-weight: 400;
+}
+
+.shopPage .myContainer {
+  display: grid;
+}
+.shopPage .myContainer .shopPage-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 50px;
+}
+.shopPage .myContainer .circleBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding-bottom: 50px;
+}
+.shopPage .myContainer .circleBox button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #e7ab3c;
+  cursor: pointer;
+}
+.shopPage .myContainer .circleBox button.activeBtn {
+  background-color: #e7ab3c;
+}
+
+@media screen and (max-width: 992px) {
+  .shopPage .myContainer {
+    padding: 50px 0;
+    display: grid;
+  }
+  .shopPage .myContainer .shopPage-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .shopPage .myContainer {
+    padding: 50px 0;
+    display: grid;
+  }
+  .shopPage .myContainer .shopPage-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 568px) {
+  .shopPage .myContainer {
+    padding: 50px 0;
+    display: grid;
+  }
+  .shopPage .myContainer .shopPage-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
 }

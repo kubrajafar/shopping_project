@@ -1,0 +1,64 @@
+.shopPage {
+  .myContainer {
+    display: grid;
+    .shopPage-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 50px;
+    }
+    .circleBox {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      padding-bottom: 50px;
+      button {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #e7ab3c;
+        cursor: pointer;
+        &.activeBtn {
+          background-color: #e7ab3c;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .shopPage {
+    .myContainer {
+      padding: 50px 0;
+      display: grid;
+      .shopPage-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .shopPage {
+    .myContainer {
+      padding: 50px 0;
+      display: grid;
+      .shopPage-container {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 568px) {
+  .shopPage {
+    .myContainer {
+      padding: 50px 0;
+      display: grid;
+      .shopPage-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+      }
+    }
+  }
+}
