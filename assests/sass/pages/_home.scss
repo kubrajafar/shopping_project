@@ -251,71 +251,79 @@
           gap: 20px;
           margin: 0 auto;
           align-items: center;
-          a {
-            .slider-card {
-              max-width: 280px;
-              width: 100%;
-              text-align: center;
+
+          .slider-card {
+            max-width: 260px;
+            width: 100%;
+            text-align: center;
+            .img-link {
               .card-img {
-                max-width: 280px;
+                max-width: 260px;
+
                 width: 100%;
               }
-              .card-content {
-                font-family: "Mulish", sans-serif;
-                padding-top: 17px;
-                border: 1px solid #b2b2b2;
+            }
+
+            .card-content {
+              font-family: "Mulish", sans-serif;
+              padding-top: 14px;
+              border: 1px solid #b2b2b2;
+              .name-link {
                 .card-product-name {
                   font-size: 16px;
                   color: #111111;
                   font-weight: 400;
-                  padding-bottom: 10px;
+                  padding-bottom: 7px;
                 }
                 .card-product-price {
                   color: #e7ab3c;
                   font-size: 18px;
                   font-weight: 700;
-                  padding-bottom: 15px;
+                  padding-bottom: 12px;
                 }
-                .card-btns {
-                  width: 100%;
+              }
+
+            
+              .card-btns {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 1px solid #d5d4d2;
+                .wishlist-btn {
+                  width: 50%;
+                  height: 45px;
+                  border-right: 1px solid #d5d4d2;
                   display: flex;
                   align-items: center;
-                  justify-content: space-between;
-                  border-top: 1px solid #d5d4d2;
-                  .wishlist-btn {
-                    width: 50%;
-                    height: 50px;
-                    border-right: 1px solid #d5d4d2;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    transition: 0.5s;
-                    cursor: pointer;
+                  justify-content: center;
+                  transition: 0.5s;
+                  cursor: pointer;
 
-                    i {
-                      font-size: 24px;
-                      color: #706c6c;
-                    }
-                    &:hover {
-                      background-color: #e7ab3c;
-                    }
+                  i {
+                    font-size: 24px;
+                    color: rgb(255, 4, 4);
+
                   }
-                  .basket-btn {
-                    width: 50%;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    transition: 0.5s;
-                    cursor: pointer;
+                  &:hover {
+                    background-color: #e7ab3c;
+                  }
+                }
+                .basket-btn {
+                  width: 50%;
+                  height: 45px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transition: 0.5s;
+                  cursor: pointer;
 
-                    i {
-                      font-size: 24px;
-                      color: #706c6c;
-                    }
-                    &:hover {
-                      background-color: #e7ab3c;
-                    }
+                  i {
+                    font-size: 24px;
+                    color: #a3a9a3;
+                  }
+                  &:hover {
+                    background-color: #e7ab3c;
                   }
                 }
               }

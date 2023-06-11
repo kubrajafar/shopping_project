@@ -1,0 +1,96 @@
+#basket-section {
+  .myContainer {
+    .basket-container {
+      width: 100%;
+      padding: 70px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Mulish", sans-serif;
+      .basket-cardsBox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 0 auto;
+        align-items: center;
+        .slider-card {
+          max-width: 260px;
+          width: 100%;
+          text-align: center;
+          padding-bottom: 50px;
+          .img-link {
+            .card-img {
+              max-width: 260px;
+
+              width: 100%;
+            }
+          }
+
+          .card-content {
+            font-family: "Mulish", sans-serif;
+            padding-top: 14px;
+            border: 1px solid #b2b2b2;
+            .name-link {
+              .card-product-name {
+                font-size: 16px;
+                color: #111111;
+                font-weight: 400;
+                padding-bottom: 7px;
+              }
+              .card-product-price {
+                color: #e7ab3c;
+                font-size: 18px;
+                font-weight: 700;
+                padding-bottom: 12px;
+              }
+            }
+
+            .basket-property {
+              width: 100%;
+              display: flex;
+              border-top: 1px solid #b2b2b2;
+              justify-content: space-between;
+              align-items: center;
+              font-size: 25px;
+
+              .product-quantity {
+                height: 50px;
+                width: 50%;
+
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+
+                border-right: 1px solid #b2b2b2;
+                button {
+                  background-color: inherit;
+                  padding: 3px 5px;
+                  font-size: 27px;
+                  border: none;
+                }
+              }
+              div {
+                width: 50%;
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+      }
+      .basket-total {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 0;
+        align-self: flex-start;
+        border: 1px solid #b2b2b2;
+        padding: 10px;
+        color: #e7ab3c;
+      }
+    }
+  }
+}

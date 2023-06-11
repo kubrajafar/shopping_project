@@ -473,42 +473,42 @@ footer .myContainer .footer-container .min-footer p span:hover {
   margin: 0 auto;
   align-items: center;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card {
-  max-width: 280px;
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card {
+  max-width: 260px;
   width: 100%;
   text-align: center;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-img {
-  max-width: 280px;
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .img-link .card-img {
+  max-width: 260px;
   width: 100%;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content {
   font-family: "Mulish", sans-serif;
-  padding-top: 17px;
+  padding-top: 14px;
   border: 1px solid #b2b2b2;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-product-name {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .name-link .card-product-name {
   font-size: 16px;
   color: #111111;
   font-weight: 400;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-product-price {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .name-link .card-product-price {
   color: #e7ab3c;
   font-size: 18px;
   font-weight: 700;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #d5d4d2;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .wishlist-btn {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .wishlist-btn {
   width: 50%;
-  height: 50px;
+  height: 45px;
   border-right: 1px solid #d5d4d2;
   display: flex;
   align-items: center;
@@ -516,27 +516,27 @@ footer .myContainer .footer-container .min-footer p span:hover {
   transition: 0.5s;
   cursor: pointer;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .wishlist-btn i {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .wishlist-btn i {
   font-size: 24px;
-  color: #706c6c;
+  color: rgb(255, 4, 4);
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .wishlist-btn:hover {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .wishlist-btn:hover {
   background-color: #e7ab3c;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .basket-btn {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .basket-btn {
   width: 50%;
-  height: 50px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
   cursor: pointer;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .basket-btn i {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .basket-btn i {
   font-size: 24px;
-  color: #706c6c;
+  color: #a3a9a3;
 }
-#trending-section .myContainer .trending-container .trending-content .cards-slider a .slider-card .card-content .card-btns .basket-btn:hover {
+#trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .card-btns .basket-btn:hover {
   background-color: #e7ab3c;
 }
 
@@ -880,6 +880,80 @@ footer .myContainer .footer-container .min-footer p span:hover {
   text-align: center;
   font-family: "Mulish", sans-serif;
 }
+#wishlist-section .myContainer .wishlist-container .full-wishlist {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+  align-items: center;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card {
+  max-width: 260px;
+  width: 100%;
+  text-align: center;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .img-link .card-img {
+  max-width: 260px;
+  width: 100%;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content {
+  font-family: "Mulish", sans-serif;
+  padding-top: 14px;
+  border: 1px solid #b2b2b2;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content .name-link .card-product-name {
+  font-size: 16px;
+  color: #111111;
+  font-weight: 400;
+  padding-bottom: 7px;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content .name-link .card-product-price {
+  color: #e7ab3c;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content .card-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d5d4d2;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content .card-btns .wishlist-btn {
+  width: 50%;
+  height: 45px;
+  border-right: 1px solid #d5d4d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content .card-btns .wishlist-btn i {
+  font-size: 24px;
+  color: rgb(255, 4, 4);
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content .card-btns .wishlist-btn:hover {
+  background-color: #e7ab3c;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content .card-btns .basket-btn {
+  width: 50%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content .card-btns .basket-btn i {
+  font-size: 24px;
+  color: #a3a9a3;
+}
+#wishlist-section .myContainer .wishlist-container .full-wishlist .slider-card .card-content .card-btns .basket-btn:hover {
+  background-color: #e7ab3c;
+}
 #wishlist-section .myContainer .wishlist-container .empty-wishlist {
   width: 100%;
 }
@@ -913,6 +987,89 @@ footer .myContainer .footer-container .min-footer p span:hover {
   font-size: 18px;
   background-color: #e7ab3c;
   padding: 15px 40px;
+}
+
+#basket-section .myContainer .basket-container {
+  width: 100%;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+  align-items: center;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox .slider-card {
+  max-width: 260px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox .slider-card .img-link .card-img {
+  max-width: 260px;
+  width: 100%;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox .slider-card .card-content {
+  font-family: "Mulish", sans-serif;
+  padding-top: 14px;
+  border: 1px solid #b2b2b2;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox .slider-card .card-content .name-link .card-product-name {
+  font-size: 16px;
+  color: #111111;
+  font-weight: 400;
+  padding-bottom: 7px;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox .slider-card .card-content .name-link .card-product-price {
+  color: #e7ab3c;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox .slider-card .card-content .basket-property {
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #b2b2b2;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox .slider-card .card-content .basket-property .product-quantity {
+  height: 50px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  border-right: 1px solid #b2b2b2;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox .slider-card .card-content .basket-property .product-quantity button {
+  background-color: inherit;
+  padding: 3px 5px;
+  font-size: 27px;
+  border: none;
+}
+#basket-section .myContainer .basket-container .basket-cardsBox .slider-card .card-content .basket-property div {
+  width: 50%;
+  margin: 0 auto;
+}
+#basket-section .myContainer .basket-container .basket-total {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 0;
+  align-self: flex-start;
+  border: 1px solid #b2b2b2;
+  padding: 10px;
+  color: #e7ab3c;
 }
 
 .shopPage .myContainer .shopPage-container {

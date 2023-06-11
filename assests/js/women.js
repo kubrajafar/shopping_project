@@ -1,7 +1,8 @@
 let shopPage_container = document.querySelector(".shopPage-container");
 const circleBox = document.querySelector(".circleBox");
 let cricleBoxChildren = circleBox.children;
-
+let basket_arr = [];
+let wishlist_arr = [];
 function cardsData(data) {
   const slider_card = document.createElement("div");
   const card_img = document.createElement("img");
@@ -29,6 +30,35 @@ function cardsData(data) {
   wishlist_btn.innerHTML = `<i class="fa-regular fa-heart"></i>`;
   basket_btn.innerHTML = `<i class="fa-solid fa-cart-plus"></i>`;
 
+  if (wishlist_arr.find((x) => x.id == data.id) !== undefined) {
+    wishlist_btn.innerHTML = `<i class="fa-solid fa-heart"></i>`;
+  }
+
+  // basket
+  basket_btn.onclick = function () {
+    if (basket_arr.find((x) => x.id == data.id) === undefined) {
+      basket_arr.push({ ...data, count: 1 });
+      basket_btn.children[0].style.color = "#10c610";
+    } else {
+      basket_arr = basket_arr.filter((x) => x.id !== data.id);
+      basket_btn.children[0].style.color = "#a3a9a3";
+    }
+    localStorage.setItem("basket", JSON.stringify(basket_arr));
+  };
+
+  // wishlist
+
+  wishlist_btn.onclick = () => {
+    if (wishlist_arr.find((x) => x.id == data.id) === undefined) {
+      wishlist_arr.push(data);
+      wishlist_btn.innerHTML = `<i class="fa-solid fa-heart"></i>`;
+    } else {
+      wishlist_arr = wishlist_arr.filter((x) => x.id !== data.id);
+      wishlist_btn.innerHTML = `<i class="fa-regular fa-heart"></i>`;
+    }
+    localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
+  };
+
   card_btns.append(wishlist_btn, basket_btn);
   card_content.append(card_product_name, card_product_price, card_btns);
   slider_card.append(card_img, card_content);
@@ -40,16 +70,15 @@ async function klikBtn() {
     .then((res) => res.json())
     .then((data) => {
       let DataResult = data.women;
-  
+
       let result = DataResult.length / 12 - 1;
- 
+
       for (let i = 0; i < result; i++) {
         result * circleAdd();
       }
 
       for (let i = 0; i < 12; i++) {
         cardsData(DataResult[i]);
-
       }
 
       for (let i = 0; i < cricleBoxChildren.length; i++) {
