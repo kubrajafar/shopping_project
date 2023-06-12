@@ -15,6 +15,7 @@ function tableData(data) {
   const name = document.createElement("td");
   const type = document.createElement("td");
   const price = document.createElement("td");
+  const stock = document.createElement("td");
   const edit = document.createElement("td");
   const del = document.createElement("td");
 
@@ -23,21 +24,22 @@ function tableData(data) {
   name.innerText = data.productName;
   type.innerText = data.productType;
   price.innerText = data.productPrice;
-
-  del.innerText = "Del";
+  stock.innerText = data.stock;
+  del.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
   del.style.color = "red";
   del.style.cursor = "pointer";
 
-  edit.innerText = "Edit";
+  edit.innerHTML = `<i class="fa-sharp fa-solid fa-pen-to-square"></i>`;
   edit.style.color = "green";
   edit.style.cursor = "pointer";
 
-
-
+  tbody.appendChild(tr);
+  tr.append(img, gender, name, type, price,stock, edit, del);
+  
   del.onclick = () => {
     del.parentElement.remove();
- 
-    fetch("http://localhost:5000/itemsData/" + data.id, { method: "Delete"})
+
+    fetch("http://localhost:5000/itemsData/" + data.id, { method: "Delete" })
       .then((res) => res.json())
       .then(
         fetch("http://localhost:5000/itemsData", {
@@ -47,7 +49,4 @@ function tableData(data) {
           .then(tableData())
       );
   };
-
-  tbody.appendChild(tr);
-  tr.append(img, gender, name, type, price, edit, del);
 }

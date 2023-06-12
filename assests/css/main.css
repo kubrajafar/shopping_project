@@ -1281,31 +1281,224 @@ footer .myContainer .footer-container .min-footer p span:hover {
     justify-content: center;
   }
 }
+#admin_panel-section {
+  background-color: #152036;
+}
 #admin_panel-section .myContainer .adminPanel-container {
   font-family: "Jost", sans-serif;
   text-align: center;
-  padding: 50px 0;
+  padding-top: 50px;
   width: 100%;
 }
-#admin_panel-section .myContainer .adminPanel-container .table {
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-nav-menu {
+  width: 100%;
+  background-color: #1b2a47;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-nav-menu h1 {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Sofia", cursive;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-nav-menu .right-menu {
+  display: flex;
+  gap: 15px;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-nav-menu .right-menu i {
+  font-size: 20px;
+  color: #fff;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  background-color: #1b2a47;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu ul li {
+  text-align: left;
+  padding: 15px;
+  font-size: 18px;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu ul li a i {
+  margin-right: 10px;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu .profile-setting {
+  padding: 40px 0;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu .profile-setting img {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu .profile-setting .admin_social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu .profile-setting .admin_social i {
+  font-size: 20px;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu .profile-setting .admin_social .fa-facebook-f {
+  border-right: 1px solid #152036;
+  padding-right: 10px;
+}
+#admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu .profile-setting .admin_social .fa-twitter {
+  border-right: 1px solid #152036;
+  padding-right: 10px;
+}
+#admin_panel-section .myContainer .adminPanel-container .breadcome-list {
+  max-width: 1050px;
+  width: 100%;
+  background-color: #1b2a47;
+  margin-left: auto;
+  margin-top: 65px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#admin_panel-section .myContainer .adminPanel-container .breadcome-list .breadcomb-wp {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+}
+#admin_panel-section .myContainer .adminPanel-container .breadcome-list .breadcomb-wp .breadcomb-icon {
+  font-size: 20px;
+  color: #fff;
+  padding: 15px 18px;
+  border-radius: 5px;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+#admin_panel-section .myContainer .adminPanel-container .breadcome-list .breadcomb-report {
+  padding-right: 20px;
+}
+#admin_panel-section .myContainer .adminPanel-container .breadcome-list .breadcomb-report button {
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #152036;
+}
+#admin_panel-section .myContainer .adminPanel-container .breadcome-list .breadcomb-report button i {
+  color: #fff;
+  font-size: 20px;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table {
+  max-width: 1050px;
+  width: 100%;
+  background-color: #1b2a47;
+  margin-left: auto;
+  margin-top: 30px;
+  color: #fff;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table .table-header {
+  max-width: 1050px;
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b2a47;
+  padding: 20px;
+  border-bottom: 1px solid #152036;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table .table-header h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table .table-header a {
+  padding: 7px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #152036;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table .table {
+  width: 100%;
   border-collapse: collapse;
-  width: 100%;
 }
-#admin_panel-section .myContainer .adminPanel-container .table thead {
+#admin_panel-section .myContainer .adminPanel-container .product_table .table thead {
   width: 100%;
   margin-top: 10px;
+  border-bottom: 1px solid #152036;
+  font-size: 14px;
 }
-#admin_panel-section .myContainer .adminPanel-container .table thead tr th {
-  border: 1px solid #dddddd;
-  padding: 8px;
+#admin_panel-section .myContainer .adminPanel-container .product_table .table thead tr th {
+  padding: 15px;
 }
-#admin_panel-section .myContainer .adminPanel-container .table tbody tr {
-  border: 1px solid #dddddd;
+#admin_panel-section .myContainer .adminPanel-container .product_table .table tbody {
+  padding: 20px;
 }
-#admin_panel-section .myContainer .adminPanel-container .table tbody tr img {
+#admin_panel-section .myContainer .adminPanel-container .product_table .table tbody tr {
+  border-bottom: 2px solid #152036;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table .table tbody tr img {
   width: 50px;
+  padding-top: 7px;
 }
-#admin_panel-section .myContainer .adminPanel-container .table tbody tr td {
-  border: 1px solid #dddddd;
+#admin_panel-section .myContainer .adminPanel-container .product_table .table tbody tr td {
   padding: 5px;
+}
+#admin_panel-section .myContainer .adminPanel-container .admin_panel-footer {
+  background-color: #1b2a47;
+  margin-top: 30px;
+  color: #fff;
+  padding: 30px;
+  margin-right: 0;
+}
+
+#admin_panel-section .myContainer .adminPanel-container .product_table {
+  padding: 20px;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data, #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data {
+  width: 50%;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data input, #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data input {
+  background-color: #152036;
+  border: 1px solid #152036;
+  border-radius: 1px;
+  color: inherit;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  margin: 10px;
+}
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data .submit-btn, #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data .submit-btn {
+  cursor: pointer;
+  background-color: #0d1525;
 }

@@ -1,6 +1,7 @@
 module.exports = [
   {
     id: 1,
+    stock: 4,
     gender: "women",
     productType: "shirt",
     productImg: "http://localhost:5000/women-1.jpg",
@@ -11,6 +12,7 @@ module.exports = [
   },
   {
     id: 2,
+    stock: 4,
     gender: "women",
     productType: "shirt",
     productImg: "http://localhost:5000/women-2.jpg",
@@ -21,6 +23,7 @@ module.exports = [
   },
   {
     id: 3,
+    stock: 4,
     gender: "women",
     productType: "shirt",
     productImg: "http://localhost:5000/women-3.jpg",
@@ -31,6 +34,7 @@ module.exports = [
   },
   {
     id: 4,
+    stock: 4,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-4.jpg",
@@ -41,6 +45,7 @@ module.exports = [
   },
   {
     id: 5,
+    stock: 5,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-2.jpg",
@@ -51,6 +56,7 @@ module.exports = [
   },
   {
     id: 6,
+    stock: 3,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-2.jpg",
@@ -61,6 +67,7 @@ module.exports = [
   },
   {
     id: 7,
+    stock: 4,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-2.jpg",
@@ -71,6 +78,7 @@ module.exports = [
   },
   {
     id: 8,
+    stock: 4,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-2.jpg",
@@ -81,6 +89,7 @@ module.exports = [
   },
   {
     id: 9,
+    stock: 7,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-2.jpg",
@@ -91,6 +100,7 @@ module.exports = [
   },
   {
     id: 10,
+    stock: 4,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-1.jpg",
@@ -101,6 +111,7 @@ module.exports = [
   },
   {
     id: 11,
+    stock: 4,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-2.jpg",
@@ -111,6 +122,7 @@ module.exports = [
   },
   {
     id: 12,
+    stock: 4,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-3.jpg",
@@ -121,6 +133,7 @@ module.exports = [
   },
   {
     id: 13,
+    stock: 4,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-3.jpg",
@@ -132,6 +145,7 @@ module.exports = [
 
   {
     id: 14,
+    stock: 4,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
@@ -142,6 +156,7 @@ module.exports = [
   },
   {
     id: 15,
+    stock: 4,
     gender: "men",
     productType: "shoe",
     productImg: "http://localhost:5000/man-2.jpg",
@@ -152,6 +167,7 @@ module.exports = [
   },
   {
     id: 16,
+    stock: 4,
     gender: "men",
     productType: "jacket",
     productImg: "http://localhost:5000/man-3.jpg",
@@ -162,6 +178,7 @@ module.exports = [
   },
   {
     id: 17,
+    stock: 4,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
@@ -172,6 +189,7 @@ module.exports = [
   },
   {
     id: 18,
+    stock: 10,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
@@ -182,6 +200,7 @@ module.exports = [
   },
   {
     id: 19,
+    stock: 4,
     gender: "men",
     productType: "shoe",
     productImg: "http://localhost:5000/man-2.jpg",
@@ -192,6 +211,7 @@ module.exports = [
   },
   {
     id: 20,
+    stock: 4,
     gender: "men",
     productType: "jacket",
     productImg: "http://localhost:5000/man-3.jpg",
@@ -202,16 +222,18 @@ module.exports = [
   },
   {
     id: 21,
+    stock: 4,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
     productName: "Pure Pineapple",
-    productPrice: "$14.00",
+    productPrice: "$54.00",
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
     id: 22,
+    stock: 4,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
@@ -222,16 +244,18 @@ module.exports = [
   },
   {
     id: 23,
+    stock: 4,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
     productName: "Pure Pineapple",
-    productPrice: "$14.00",
+    productPrice: "$24.00",
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
     id: 24,
+    stock: 4,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
@@ -242,15 +266,18 @@ module.exports = [
   },
   {
     id: 25,
+    stock: "out of stock",
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
     productName: "Pure Pineapple",
-    productPrice: "$14.00",
+    productPrice: "$13.00",
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },{
+  },
+  {
     id: 26,
+    stock: 4,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
@@ -258,13 +285,15 @@ module.exports = [
     productPrice: "$14.00",
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },{
+  },
+  {
     id: 27,
+    stock: 4,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
     productName: "Pure Pineapple",
-    productPrice: "$14.00",
+    productPrice: "$12.00",
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
