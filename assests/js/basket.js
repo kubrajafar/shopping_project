@@ -69,7 +69,7 @@ basket_arr.forEach((element) => {
   productElement.classList.add("basket-property");
   productQuantity.classList.add("product-quantity");
 
-  card_img.setAttribute("src", element.peoductImg);
+  card_img.setAttribute("src", element.productImg);
   card_product_name.innerText = element.productName;
   card_product_price.innerText = element.productPrice;
 

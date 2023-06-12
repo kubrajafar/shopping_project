@@ -1,8 +1,10 @@
 let shopPage_container = document.querySelector(".shopPage-container");
 const circleBox = document.querySelector(".circleBox");
 let cricleBoxChildren = circleBox.children;
+
 let basket_arr = [];
 let wishlist_arr = [];
+
 function cardsData(data) {
   const slider_card = document.createElement("div");
   const card_img = document.createElement("img");
@@ -23,7 +25,7 @@ function cardsData(data) {
   wishlist_btn.classList.add("wishlist-btn");
   basket_btn.classList.add("basket-btn");
 
-  card_img.setAttribute("src", data.peoductImg);
+  card_img.setAttribute("src", data.productImg);
   card_product_name.innerText = data.productName;
   card_product_price.innerText = data.productPrice;
 
@@ -69,7 +71,13 @@ async function klikBtn() {
   await fetch("http://localhost:5000/itemsData")
     .then((res) => res.json())
     .then((data) => {
-      let DataResult = data.women;
+      let DataResult = [];
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].gender === "women") {
+          DataResult.push(data[i]);
+        }
+      }
 
       let result = DataResult.length / 12 - 1;
 
@@ -109,3 +117,12 @@ function circleAdd() {
   circleBox.append(btn);
 }
 klikBtn();
+
+window.onload = function () {
+  if (localStorage.getItem("basket") !== null) {
+    basket_arr = JSON.parse(localStorage.getItem("basket"));
+  }
+  if (localStorage.getItem("wishlist") !== null) {
+    wishlist_arr = JSON.parse(localStorage.getItem("wishlist"));
+  }
+};

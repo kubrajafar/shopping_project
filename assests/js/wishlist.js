@@ -1,5 +1,7 @@
 const wishlist_container = document.querySelector(".full-wishlist");
 let wishlist_arr = [];
+let basket_arr = [];
+
 wishlist_arr = JSON.parse(localStorage.getItem("wishlist"));
 
 wishlist_arr.forEach((element) => {
@@ -28,7 +30,7 @@ wishlist_arr.forEach((element) => {
   wishlist_btn.classList.add("wishlist-btn");
   basket_btn.classList.add("basket-btn");
 
-  card_img.setAttribute("src", element.peoductImg);
+  card_img.setAttribute("src", element.productImg);
   card_product_name.innerText = element.productName;
   card_product_price.innerText = element.productPrice;
 
@@ -41,6 +43,17 @@ wishlist_arr.forEach((element) => {
     wishlist_arr = wishlist_arr.filter((x) => x.id !== element.id);
     localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
     slider_card.remove();
+  };
+
+  basket_btn.onclick = function () {
+    if (basket_arr.find((x) => x.id == element.id) === undefined) {
+      basket_arr.push({ ...element, count: 1 });
+      basket_btn.children[0].style.color = "#10c610";
+    } else {
+      basket_arr = basket_arr.filter((x) => x.id !== element.id);
+      basket_btn.children[0].style.color = "#a3a9a3";
+    }
+    localStorage.setItem("basket", JSON.stringify(basket_arr));
   };
 
   card_btns.append(wishlist_btn, basket_btn);

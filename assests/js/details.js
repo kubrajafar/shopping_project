@@ -20,7 +20,7 @@ function detailsData(data) {
   product_detail_about.classList.add("product_detail_about");
   product_detail_type.classList.add("product_detail_type");
 
-  details_img.setAttribute("src", data.peoductImg);
+  details_img.setAttribute("src", data.productImg);
   product_detail_name.innerText = data.productName;
   product_detail_price.innerText = data.productPrice;
   product_detail_type.innerText = data.productType;
