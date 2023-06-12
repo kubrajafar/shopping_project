@@ -1,0 +1,37 @@
+#admin_panel-section {
+  .myContainer {
+    .adminPanel-container {
+      font-family: "Jost", sans-serif;
+      text-align: center;
+padding: 50px 0;
+      width: 100%;
+      .table {
+        border-collapse: collapse;
+        width: 100%;
+        thead {
+          width: 100%;
+          margin-top: 10px;
+          tr {
+            th {
+              border: 1px solid #dddddd;
+              padding: 8px;
+            }
+          }
+      }
+        tbody {
+          tr {
+            border: 1px solid #dddddd;
+            img {
+              width: 50px;
+              
+            }
+            td {
+              border: 1px solid #dddddd;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -16,16 +16,13 @@ app.get("/itemsData", (req, res) => {
 });
 
 app.get("/itemsData/:id", (req, res) => {
-  const { id } = req.params;
-  const item = data.find((itemData) => {
-    itemData.id === parseInt(id);
-    if (item) {
-      res.status(200).json(item);
-    } else {
-      res.status(404).send("tapilmadi");
-    }
-  });
+  const  {id}  = req.params;
+
+  data.find((dat) => dat.id == req.params.id);
+  res.json(data[+id - 1]);
+
 });
+
 
 app.listen(5000, () => {
   console.log(`http://localhost:5000 adresinden gelen istekler `);

@@ -148,16 +148,7 @@ function cardsData(data) {
     localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
   };
 
-  shirt.addEventListener("click", () => {
-    
-    const slider_card = document.querySelectorAll(".slider-card");
-    console.log(slider_card);
-    if (data.productType.includes("shirt")) {
-      slider_card.forEach((element) => {
-        element.style.display = "block";
-      });
-    }
-  });
+
 
   card_btns.append(wishlist_btn, basket_btn);
   name_btn_link.append(card_product_name, card_product_price);

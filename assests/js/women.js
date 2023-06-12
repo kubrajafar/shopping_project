@@ -2,6 +2,11 @@ let shopPage_container = document.querySelector(".shopPage-container");
 const circleBox = document.querySelector(".circleBox");
 let cricleBoxChildren = circleBox.children;
 
+const shirt = document.querySelector("#shirt");
+const handbag = document.querySelector("#handbag");
+const shoes = document.querySelector("#shoes");
+const accessories = document.querySelector("#accessories");
+
 let basket_arr = [];
 let wishlist_arr = [];
 
@@ -71,6 +76,8 @@ async function klikBtn() {
   await fetch("http://localhost:5000/itemsData")
     .then((res) => res.json())
     .then((data) => {
+  
+
       let DataResult = [];
 
       for (let i = 0; i < data.length; i++) {
@@ -126,3 +133,16 @@ window.onload = function () {
     wishlist_arr = JSON.parse(localStorage.getItem("wishlist"));
   }
 };
+
+// shirt.addEventListener("click", () => {
+//   fetch("http://localhost:5000/itemsData")
+//     .then((res) => res.json())
+//     .then((data) => {
+//       let filterArr = [];
+//       data.forEach((element) => {
+//         if (element.productType.includes("shirt")) {
+//           filterArr.push(element);
+//         }
+//       });
+//     });
+// });

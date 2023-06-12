@@ -1,6 +1,26 @@
 .shopPage {
   .myContainer {
     display: grid;
+
+    .cards-menu {
+      width: 100%;
+      padding-top: 70px;
+
+      ul {
+        font-family: "Jost", sans-serif;
+
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+          font-size: 21px;
+          color: #b2b2b2;
+          letter-spacing: 0.5px;
+          cursor: pointer;
+        }
+      }
+    }
     .shopPage-container {
       display: grid;
       grid-template-columns: auto auto auto auto;

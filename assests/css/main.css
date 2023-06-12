@@ -1210,6 +1210,23 @@ footer .myContainer .footer-container .min-footer p span:hover {
 .shopPage .myContainer {
   display: grid;
 }
+.shopPage .myContainer .cards-menu {
+  width: 100%;
+  padding-top: 70px;
+}
+.shopPage .myContainer .cards-menu ul {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.shopPage .myContainer .cards-menu ul li {
+  font-size: 21px;
+  color: #b2b2b2;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
 .shopPage .myContainer .shopPage-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -1263,4 +1280,32 @@ footer .myContainer .footer-container .min-footer p span:hover {
     grid-template-columns: auto;
     justify-content: center;
   }
+}
+#admin_panel-section .myContainer .adminPanel-container {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+}
+#admin_panel-section .myContainer .adminPanel-container .table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#admin_panel-section .myContainer .adminPanel-container .table thead {
+  width: 100%;
+  margin-top: 10px;
+}
+#admin_panel-section .myContainer .adminPanel-container .table thead tr th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+#admin_panel-section .myContainer .adminPanel-container .table tbody tr {
+  border: 1px solid #dddddd;
+}
+#admin_panel-section .myContainer .adminPanel-container .table tbody tr img {
+  width: 50px;
+}
+#admin_panel-section .myContainer .adminPanel-container .table tbody tr td {
+  border: 1px solid #dddddd;
+  padding: 5px;
 }

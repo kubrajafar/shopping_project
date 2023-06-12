@@ -120,7 +120,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 12,
+    id: 13,
     gender: "women",
     productType: "bag",
     productImg: "http://localhost:5000/women-3.jpg",
@@ -131,7 +131,7 @@ module.exports = [
   },
 
   {
-    id: 13,
+    id: 14,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
@@ -141,7 +141,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 14,
+    id: 15,
     gender: "men",
     productType: "shoe",
     productImg: "http://localhost:5000/man-2.jpg",
@@ -151,20 +151,10 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 15,
+    id: 16,
     gender: "men",
     productType: "jacket",
     productImg: "http://localhost:5000/man-3.jpg",
-    productName: "Pure Pineapple",
-    productPrice: "$14.00",
-    productAbout:
-      "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },
-  {
-    id: 16,
-    gender: "men",
-    productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -183,8 +173,8 @@ module.exports = [
   {
     id: 18,
     gender: "men",
-    productType: "shoe",
-    productImg: "http://localhost:5000/man-2.jpg",
+    productType: "bag",
+    productImg: "http://localhost:5000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -193,8 +183,8 @@ module.exports = [
   {
     id: 19,
     gender: "men",
-    productType: "jacket",
-    productImg: "http://localhost:5000/man-3.jpg",
+    productType: "shoe",
+    productImg: "http://localhost:5000/man-2.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -203,8 +193,8 @@ module.exports = [
   {
     id: 20,
     gender: "men",
-    productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productType: "jacket",
+    productImg: "http://localhost:5000/man-3.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -249,7 +239,8 @@ module.exports = [
     productPrice: "$14.00",
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },{
+  },
+  {
     id: 25,
     gender: "men",
     productType: "bag",
@@ -260,6 +251,15 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },{
     id: 26,
+    gender: "men",
+    productType: "bag",
+    productImg: "http://localhost:5000/man-1.jpg",
+    productName: "Pure Pineapple",
+    productPrice: "$14.00",
+    productAbout:
+      "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
+  },{
+    id: 27,
     gender: "men",
     productType: "bag",
     productImg: "http://localhost:5000/man-1.jpg",
