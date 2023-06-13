@@ -4,7 +4,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "shirt",
-    productImg: "http://localhost:5000/women-1.jpg",
+    productImg: "http://localhost:3000/women-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -15,7 +15,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "shirt",
-    productImg: "http://localhost:5000/women-2.jpg",
+    productImg: "http://localhost:3000/women-2.jpg",
     productName: "Pure Pineapple,",
     productPrice: "$14.00",
     productAbout:
@@ -26,7 +26,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "shirt",
-    productImg: "http://localhost:5000/women-3.jpg",
+    productImg: "http://localhost:3000/women-3.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -37,7 +37,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-4.jpg",
+    productImg: "http://localhost:3000/women-4.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -48,7 +48,7 @@ module.exports = [
     stock: 5,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-2.jpg",
+    productImg: "http://localhost:3000/women-2.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -59,7 +59,7 @@ module.exports = [
     stock: 3,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-2.jpg",
+    productImg: "http://localhost:3000/women-2.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -70,7 +70,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-2.jpg",
+    productImg: "http://localhost:3000/women-2.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -81,7 +81,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-2.jpg",
+    productImg: "http://localhost:3000/women-2.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -92,7 +92,7 @@ module.exports = [
     stock: 7,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-2.jpg",
+    productImg: "http://localhost:3000/women-2.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -103,7 +103,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-1.jpg",
+    productImg: "http://localhost:3000/women-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -114,7 +114,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-2.jpg",
+    productImg: "http://localhost:3000/women-2.jpg",
     productName: "Pure Pineapple,",
     productPrice: "$14.00",
     productAbout:
@@ -125,7 +125,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-3.jpg",
+    productImg: "http://localhost:3000/women-3.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -136,7 +136,7 @@ module.exports = [
     stock: 4,
     gender: "women",
     productType: "bag",
-    productImg: "http://localhost:5000/women-3.jpg",
+    productImg: "http://localhost:3000/women-3.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -148,7 +148,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -159,7 +159,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "shoe",
-    productImg: "http://localhost:5000/man-2.jpg",
+    productImg: "http://localhost:3000/man-2.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -170,7 +170,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "jacket",
-    productImg: "http://localhost:5000/man-3.jpg",
+    productImg: "http://localhost:3000/man-3.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -181,7 +181,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -192,7 +192,7 @@ module.exports = [
     stock: 10,
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -203,7 +203,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "shoe",
-    productImg: "http://localhost:5000/man-2.jpg",
+    productImg: "http://localhost:3000/man-2.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -214,7 +214,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "jacket",
-    productImg: "http://localhost:5000/man-3.jpg",
+    productImg: "http://localhost:3000/man-3.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -225,7 +225,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$54.00",
     productAbout:
@@ -236,7 +236,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -247,7 +247,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$24.00",
     productAbout:
@@ -258,7 +258,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -269,7 +269,7 @@ module.exports = [
     stock: "out of stock",
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$13.00",
     productAbout:
@@ -280,7 +280,7 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$14.00",
     productAbout:
@@ -291,10 +291,20 @@ module.exports = [
     stock: 4,
     gender: "men",
     productType: "bag",
-    productImg: "http://localhost:5000/man-1.jpg",
+    productImg: "http://localhost:3000/man-1.jpg",
     productName: "Pure Pineapple",
     productPrice: "$12.00",
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
+  },
+  {
+    id: 28,
+    stock: 14,
+    gender: "men",
+    productType: "aaaa",
+    productImg: "http://localhost:3000/man-1.jpg",
+    productName: "kubra",
+    productPrice: "$1111111111111.00",
+    productAbout: "web dev",
   },
 ];

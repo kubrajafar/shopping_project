@@ -20,7 +20,7 @@ window.onload = function () {
 };
 
 async function dataCard() {
-  const res = await fetch("http://localhost:5000/itemsData");
+  const res = await fetch("http://localhost:3000/itemsData");
   const post = await res.json();
   const data = post;
 
@@ -33,6 +33,8 @@ async function dataCard() {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 992,

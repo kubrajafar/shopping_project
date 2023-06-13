@@ -1,6 +1,6 @@
 const tbody = document.querySelector(".tbody");
 
-fetch("http://localhost:5000/itemsData")
+fetch("http://localhost:3000/itemsData")
   .then((res) => res.json())
   .then((data) => {
     data.forEach((element) => {
@@ -39,10 +39,10 @@ function tableData(data) {
   del.onclick = () => {
     del.parentElement.remove();
 
-    fetch("http://localhost:5000/itemsData/" + data.id, { method: "Delete" })
+    fetch("http://localhost:3000/itemsData/" + data.id, { method: "Delete" })
       .then((res) => res.json())
       .then(
-        fetch("http://localhost:5000/itemsData", {
+        fetch("http://localhost:3000/itemsData", {
           method: "Get",
         })
           .then((res) => res.json())

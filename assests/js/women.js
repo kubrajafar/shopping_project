@@ -73,11 +73,9 @@ function cardsData(data) {
 }
 
 async function klikBtn() {
-  await fetch("http://localhost:5000/itemsData")
+  await fetch("http://localhost:3000/itemsData")
     .then((res) => res.json())
     .then((data) => {
-  
-
       let DataResult = [];
 
       for (let i = 0; i < data.length; i++) {

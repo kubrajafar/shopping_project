@@ -1,5 +1,5 @@
 const details_card = document.querySelector(".details-card");
-fetch("http://localhost:5000/itemsData/" + window.location.hash.slice(1))
+fetch("http://localhost:3000/itemsData/" + window.location.hash.slice(1))
   .then((res) => res.json())
   .then((data) => {
     detailsData(data);
