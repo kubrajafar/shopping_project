@@ -27,7 +27,7 @@
           font-weight: 400;
         }
       }
-      .login-submit {
+      .signup-submit {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -48,37 +48,36 @@
           padding: 0 25px;
           color: #000;
         }
-      }
-    }
+        .login-footer {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 50px;
+          .get-signup {
+            font-size: 16px;
 
-    .login-footer {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 50px;
-      .get-signup {
-        font-size: 16px;
-
-        font-weight: 400;
-        p {
-          color: #301a22;
-        }
-        a {
-          color: #ff2020;
-        }
-      }
-      .login-btnBox {
-        button {
-          background: #ff2020;
-          height: 60px;
-          padding: 10px 43px;
-          border: 0;
-          color: #fff;
-          text-transform: capitalize;
-          cursor: pointer;
-          font-size: 16px;
-          border-radius: 0px;
+            font-weight: 400;
+            p {
+              color: #301a22;
+            }
+            a {
+              color: #ff2020;
+            }
+          }
+          .login-btnBox {
+            .login-btn {
+              background-color: #ff2020;
+              height: 60px;
+              padding: 10px 43px;
+              border: 0;
+              color: #fff;
+              text-transform: capitalize;
+              cursor: pointer;
+              font-size: 16px;
+              border-radius: 0px;
+            }
+          }
         }
       }
     }

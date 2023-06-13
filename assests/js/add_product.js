@@ -27,7 +27,7 @@ submitForm.addEventListener("submit", (e) => {
     },
     body: JSON.stringify(obj),
   });
-
+  console.log(obj);
   stock.value = "";
   gender.value = "";
   type.value = "";

@@ -20,6 +20,7 @@ function tableData(data) {
   const del = document.createElement("td");
 
   img.setAttribute("src", data.productImg);
+  // console.log(img);
   gender.innerText = data.gender;
   name.innerText = data.productName;
   type.innerText = data.productType;
@@ -34,9 +35,10 @@ function tableData(data) {
   edit.style.cursor = "pointer";
 
   tbody.appendChild(tr);
-  tr.append(img, gender, name, type, price,stock, edit, del);
-  
+  tr.append(img, gender, name, type, price, stock, edit, del);
+
   del.onclick = () => {
+    console.log(del.parentElement);
     del.parentElement.remove();
 
     fetch("http://localhost:3000/itemsData/" + data.id, { method: "Delete" })
@@ -46,7 +48,11 @@ function tableData(data) {
           method: "Get",
         })
           .then((res) => res.json())
-          .then(tableData())
+          .then((data) => {
+            data.forEach((elem) => {
+              tableData(elem);
+            });
+          })
       );
   };
 }

@@ -788,20 +788,23 @@ footer .myContainer .footer-container .min-footer p span:hover {
   margin-bottom: 15px;
   font-weight: 400;
 }
-#login-section .mycontainer .login-container .login-submit {
+#login-section .mycontainer .login-container .login-submit,
+#login-section .mycontainer .login-container .signup-submit {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-#login-section .mycontainer .login-container .login-submit label {
+#login-section .mycontainer .login-container .login-submit label,
+#login-section .mycontainer .login-container .signup-submit label {
   font-size: 17px;
   margin-bottom: 6px;
   color: #140c40;
   font-weight: 500;
   margin-bottom: 6px;
 }
-#login-section .mycontainer .login-container .login-submit input {
+#login-section .mycontainer .login-container .login-submit input,
+#login-section .mycontainer .login-container .signup-submit input {
   width: 100%;
   border: 1px solid #c9c9c9;
   width: 100%;
