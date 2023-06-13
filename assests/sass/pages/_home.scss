@@ -283,7 +283,6 @@
                 }
               }
 
-            
               .card-btns {
                 width: 100%;
                 display: flex;
@@ -303,7 +302,6 @@
                   i {
                     font-size: 24px;
                     color: rgb(255, 4, 4);
-
                   }
                   &:hover {
                     background-color: #e7ab3c;
@@ -568,10 +566,8 @@
       }
 
       .slick-prev {
-        display: none !important;
       }
       .slick-next {
-        display: none !important;
       }
     }
   }
@@ -662,6 +658,15 @@
   }
 }
 @media screen and (max-width: 420px) {
+  #fashion-slider {
+    height: 90vh;
+    .slider-container {
+      .slider-one {
+        padding-left: 0 !important;
+      }
+    }
+  }
+
   #season-fashion {
     .myContainer {
       .season-fashion-container {

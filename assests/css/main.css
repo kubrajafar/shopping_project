@@ -712,12 +712,6 @@ footer .myContainer .footer-container .min-footer p span:hover {
   #fashion-slider .slider-container .slider-one .slider-item .slider-content-bigHeader h1 {
     font-size: 38px;
   }
-  #fashion-slider .slider-container .slick-prev {
-    display: none !important;
-  }
-  #fashion-slider .slider-container .slick-next {
-    display: none !important;
-  }
   #trending-section .myContainer .trending-container .trending-header {
     flex-direction: column;
   }
@@ -753,6 +747,12 @@ footer .myContainer .footer-container .min-footer p span:hover {
   }
 }
 @media screen and (max-width: 420px) {
+  #fashion-slider {
+    height: 90vh;
+  }
+  #fashion-slider .slider-container .slider-one {
+    padding-left: 0 !important;
+  }
   #season-fashion .myContainer .season-fashion-container .season-content .season-timer .timer p {
     font-size: 23px;
   }

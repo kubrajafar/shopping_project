@@ -12,7 +12,6 @@ let wishlist_arr = [];
 window.onload = function () {
   if (localStorage.getItem("basket") !== null) {
     basket_arr = JSON.parse(localStorage.getItem("basket"));
-   
   }
   if (localStorage.getItem("wishlist") !== null) {
     wishlist_arr = JSON.parse(localStorage.getItem("wishlist"));
@@ -149,8 +148,6 @@ function cardsData(data) {
     }
     localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
   };
-
-
 
   card_btns.append(wishlist_btn, basket_btn);
   name_btn_link.append(card_product_name, card_product_price);
