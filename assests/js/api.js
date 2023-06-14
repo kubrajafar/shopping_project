@@ -64,21 +64,19 @@ async function dataCard() {
     const boxes = document.querySelectorAll(".slider-card");
     console.log(boxes);
     for (let i = 0; i < boxes.length; i++) {
-      for (const i in data) {
-        data[i].forEach((element) => {
-          console.log(boxes[i]);
-          if (
-            element.productType
-              .toLowerCase()
-              .includes(search_input.value.toLowerCase())
-          ) {
-            console.log(element.productType);
-            boxes[i].style.display = "flex";
-          } else {
-            boxes[i].style.display = "none";
-          }
-        });
-      }
+      data[i].forEach((element) => {
+        console.log(boxes[i]);
+        if (
+          element.productType
+            .toLowerCase()
+            .includes(search_input.value.toLowerCase())
+        ) {
+          console.log(element.productType);
+          boxes[i].style.display = "flex";
+        } else {
+          boxes[i].style.display = "none";
+        }
+      });
     }
   });
 }
@@ -94,6 +92,8 @@ function cardsData(data) {
   const name_btn_link = document.createElement("a");
   const wishlist_btn = document.createElement("div");
   const basket_btn = document.createElement("div");
+
+  
 
   img_btn_link.href = "./details.html#" + data.id;
   name_btn_link.href = "./details.html#" + data.id;

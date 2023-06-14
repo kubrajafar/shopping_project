@@ -1,5 +1,5 @@
 const basket_container = document.querySelector(".basket-cardsBox");
-const h2 = document.querySelector("h2");
+const h5 = document.querySelector("h5");
 let basket_arr = [];
 
 basket_arr = JSON.parse(localStorage.getItem("basket"));
@@ -11,7 +11,7 @@ basket_arr.forEach((element) => {
   const card_content = document.createElement("div");
   const card_product_name = document.createElement("p");
   const card_product_price = document.createElement("h4");
-  const basket_btn = document.createElement("button");
+  
 
   const img_btn_link = document.createElement("a");
   const name_btn_link = document.createElement("a");
@@ -83,7 +83,7 @@ basket_arr.forEach((element) => {
 });
 
 function getTotal() {
-  h2.innerHTML = basket_arr.reduce(
+  h5.innerHTML = basket_arr.reduce(
     (sum, prev) => sum + prev.productPrice.substring(1) * prev.count,
     0
   );

@@ -3,15 +3,16 @@
     .details-container {
       width: 100%;
       font-family: "Jost", sans-serif;
+      padding-top: 100px ;
       .details-card {
         width: 100%;
-        padding: 100px 0;
+        padding: 20px 0;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 50px;
         .details-img {
-          max-width: 400px;
+          max-width: 300px;
           width: 100%;
         }
         .details-content {
@@ -24,20 +25,94 @@
             margin-bottom: 10px;
           }
           .product_detail_price {
-            font-size: 44px;
+            font-size: 24px;
             line-height: 28px;
             color: #e7ab3c;
             font-weight: 600;
+            margin-bottom: 10px;
           }
           .product_detail_type {
             color: #2f7dfc;
+            margin-bottom: 20px;
+          }
+          .product_sizes {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            button {
+              padding: 8px;
+              border: none;
+              cursor: pointer;
+            }
           }
           .product_detail_about {
             font-family: "Roboto", sans-serif;
-            line-height: 2;
+            line-height: 1.2;
             font-size: 15px;
             color: #606060;
             font-weight: 400;
+          }
+          .card_btns {
+            display: flex;
+            gap: 10px;
+            margin: 30px 0;
+
+            .wishlist-btn {
+              width: 20%;
+              height: 45px;
+              border-right: 1px solid #d5d4d2;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: 0.5s;
+              cursor: pointer;
+
+              i {
+                font-size: 24px;
+                color: rgb(255, 4, 4);
+              }
+              &:hover {
+                background-color: #ebb95e;
+              }
+            }
+            .basket-btn {
+              width: 20%;
+              height: 45px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: 0.5s;
+              cursor: pointer;
+
+              i {
+                font-size: 24px;
+                color: #a3a9a3;
+              }
+              &:hover {
+                background-color: #ebb95e;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 690px) {
+  #details-section {
+    .myContainer {
+      .details-container {
+        .details-card {
+          flex-direction: column;
+        
+          .details-img {
+            max-width: 350px;
+          }
+          .details-content{
+            .card_btns{
+            justify-content: center;
+            }
           }
         }
       }

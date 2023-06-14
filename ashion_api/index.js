@@ -50,9 +50,9 @@ const express = require("express");
 let bodyParser = require("body-parser");
 const path = require("path");
 const app = express();
+app.use(express.json());
 
 const cors = require("cors");
-
 app.use(express.static("public"));
 app.use(cors());
 
@@ -118,13 +118,8 @@ app.delete("/itemsData/:id", (req, res) => {
 });
 
 app.post("/itemsData", (req, res) => {
-  const newProduct = {
-    id: products.length + 1,
-    ad: req.body.ad,
-    yas: req.body.yas,
-  };
-  products.push(newProduct);
-  res.send(newProduct);
+  products.push({ ...req.body, id: products.length + 1 });
+  res.send({ ...req.body, id: products.length + 1 });
 });
 
 app.listen(3000, function () {

@@ -30,14 +30,16 @@ function cardsData(data) {
   wishlist_btn.classList.add("wishlist-btn");
   basket_btn.classList.add("basket-btn");
 
-  card_img.setAttribute("src", data.productImg);
-  card_product_name.innerText = data.productName;
-  card_product_price.innerText = data.productPrice;
+  card_img.setAttribute("src", data?.productImg);
+  card_product_name.innerText = data?.productName;
+  card_product_price.innerText = data?.productPrice;
+
+  slider_card.setAttribute("data-type", data?.productType);
 
   wishlist_btn.innerHTML = `<i class="fa-regular fa-heart"></i>`;
   basket_btn.innerHTML = `<i class="fa-solid fa-cart-plus"></i>`;
 
-  if (wishlist_arr.find((x) => x.id == data.id) !== undefined) {
+  if (wishlist_arr.find((x) => x.id == data?.id) !== undefined) {
     wishlist_btn.innerHTML = `<i class="fa-solid fa-heart"></i>`;
   }
 
@@ -132,15 +134,43 @@ window.onload = function () {
   }
 };
 
-// shirt.addEventListener("click", () => {
-//   fetch("http://localhost:5000/itemsData")
-//     .then((res) => res.json())
-//     .then((data) => {
-//       let filterArr = [];
-//       data.forEach((element) => {
-//         if (element.productType.includes("shirt")) {
-//           filterArr.push(element);
-//         }
-//       });
-//     });
-// });
+shirt.addEventListener("click", () => {
+  const boxes = document.querySelectorAll(".slider-card");
+  boxes.forEach((element) => {
+    if (element.getAttribute("data-type") === "shirt") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});
+handbag.addEventListener("click", () => {
+  const boxes = document.querySelectorAll(".slider-card");
+  boxes.forEach((element) => {
+    if (element.getAttribute("data-type") === "bag") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});
+shoes.addEventListener("click", () => {
+  const boxes = document.querySelectorAll(".slider-card");
+  boxes.forEach((element) => {
+    if (element.getAttribute("data-type") === "shoes") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});
+accessories.addEventListener("click", () => {
+  const boxes = document.querySelectorAll(".slider-card");
+  boxes.forEach((element) => {
+    if (element.getAttribute("data-type") === "accessories") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});

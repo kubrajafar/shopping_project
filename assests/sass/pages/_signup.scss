@@ -66,8 +66,8 @@
             }
           }
           .login-btnBox {
-            .login-btn {
-              background-color: #ff2020;
+            input {
+              background-color: #ff2020 !important;
               height: 60px;
               padding: 10px 43px;
               border: 0;

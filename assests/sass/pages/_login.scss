@@ -91,6 +91,7 @@
       align-items: center;
       justify-content: space-between;
       padding-top: 50px;
+      gap: 10px;
       .get-signup {
         font-size: 16px;
 
@@ -113,6 +114,26 @@
           cursor: pointer;
           font-size: 16px;
           border-radius: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:400px) {
+  #login-section {
+    .mycontainer {
+      .login-tools {
+        .login-keep {
+          align-items: center;
+        }
+      }
+      .login-footer {
+
+        .login-btnBox {
+          button {
+            height: 50px;
+            padding: 5px 20px;
+          }
         }
       }
     }
