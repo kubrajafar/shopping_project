@@ -2,6 +2,11 @@ let shopPage_container = document.querySelector(".shopPage-container");
 const circleBox = document.querySelector(".circleBox");
 let cricleBoxChildren = circleBox.children;
 
+const shirt = document.querySelector("#shirt");
+const handbag = document.querySelector("#handbag");
+const shoes = document.querySelector("#shoes");
+const accessories = document.querySelector("#accessories");
+
 const search_input = document.querySelector(".search-input");
 const search_btn = document.querySelector(".search-btn");
 let basket_arr = [];
@@ -26,6 +31,9 @@ function cardsData(data) {
   card_btns.classList.add("card-btns");
   wishlist_btn.classList.add("wishlist-btn");
   basket_btn.classList.add("basket-btn");
+
+
+  slider_card.setAttribute("data-type", data?.productType);
 
   card_img.setAttribute("src", data.productImg);
   card_product_name.innerText = data.productName;
@@ -152,3 +160,48 @@ window.onload = function () {
     wishlist_arr = JSON.parse(localStorage.getItem("wishlist"));
   }
 };
+shirt.addEventListener("click", () => {
+
+  const boxes = document.querySelectorAll(".slider-card");
+  
+  boxes.forEach((element) => {
+    if (element.getAttribute("data-type") === "shirt") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});
+handbag.addEventListener("click", () => {
+  const boxes = document.querySelectorAll(".slider-card");
+  boxes.forEach((element) => {
+    if (element.getAttribute("data-type") === "bag") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});
+shoes.addEventListener("click", () => {
+  console.log("start");
+
+  const boxes = document.querySelectorAll(".slider-card");
+  boxes.forEach((element) => {
+    
+    if (element.getAttribute("data-type") === "shoes") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});
+accessories.addEventListener("click", () => {
+  const boxes = document.querySelectorAll(".slider-card");
+  boxes.forEach((element) => {
+    if (element.getAttribute("data-type") === "accessories") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});

@@ -183,9 +183,11 @@ handbag.addEventListener("click", () => {
   });
 });
 shoes.addEventListener("click", () => {
+  console.log("start");
+
   const boxes = document.querySelectorAll(".slider-card");
   boxes.forEach((element) => {
-    console.log(element.getAttribute("data-type"));
+    
     if (element.getAttribute("data-type") === "shoes") {
       element.style.display = "block";
     } else {

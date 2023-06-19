@@ -18,3 +18,4 @@ login_btn.addEventListener("click", () => {
     alert("User not found");
   }
 });
+// localStorage.clear()
