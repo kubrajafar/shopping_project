@@ -1,0 +1,105 @@
+#blog-section {
+  .myContainer {
+    .blog-container {
+      width: 100%;
+      display: grid;
+      padding: 100px 0 40px 0;
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      gap: 10px;
+      font-family: "Muli", sans-serif;
+
+      .blog-card {
+        max-width: 380px;
+        width: 100%;
+        margin-bottom: 40px;
+        overflow: hidden;
+        .blog-imgBox {
+          transition: 0.5s;
+
+          img {
+            max-width: 380px;
+            width: 100%;
+            
+          }
+          &:hover {
+            transform: scale(1.2);
+
+          }
+        }
+        .blog-contentBox {
+          margin-top: 20px;
+          max-width: 400px;
+          a {
+            h4 {
+              font-size: 22px;
+              color: #252525;
+              font-weight: 700;
+              line-height: 30px;
+              margin-bottom: 16px;
+            }
+          }
+          p {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #e7ab3c;
+            letter-spacing: 2px;
+            line-height: 20px;
+            span {
+              font-size: 16px;
+              line-height: 26px;
+              color: #b2b2b2;
+              font-weight: 400;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #blog-section {
+    .myContainer {
+      .blog-container {
+        grid-template-columns: auto auto;
+        justify-content: center;
+        .blog-card {
+          max-width: 400px;
+          width: 100%;
+          .blog-imgBox {
+            img {
+              max-width: 400px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #blog-section {
+    .myContainer {
+      .blog-container {
+        grid-template-columns: auto;
+        justify-content: center;
+        padding: 30px 0 10px 0;
+        .blog-card {
+          .blog-contentBox {
+            margin-top: 20px;
+            max-width: 400px;
+            a {
+              h4 {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-let countDownDate = new Date("jun 23, 2023 00:00:00").getTime();
+let countDownDate = new Date("jun 30, 2023 00:00:00").getTime();
 
 let day = document.getElementById("days");
 let hour = document.getElementById("hours");

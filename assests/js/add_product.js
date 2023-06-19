@@ -1,5 +1,12 @@
 const submitForm = document.querySelector(".submit-form");
 
+const left_menu_hamburger = document.querySelector(".left-menu-hamburger");
+const adminPanel_left_menu = document.querySelector(".adminPanel-left-menu");
+
+left_menu_hamburger.addEventListener("click", () => {
+  adminPanel_left_menu.classList.toggle("active-left-menu");
+});
+
 const stock = document.querySelector("#stock");
 const gender = document.querySelector("#gender");
 const type = document.querySelector("#type");
@@ -14,7 +21,7 @@ submitForm.addEventListener("submit", (e) => {
     stock: stock.value,
     gender: gender.value,
     productType: type.value,
-    productImg: img.value,
+    productImg: "http://localhost:3000/" + img.value,
     productName: Name.value,
     productPrice: price.value,
     productAbout: about.value,

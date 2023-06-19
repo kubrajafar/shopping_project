@@ -28,6 +28,9 @@ nav .nav-container {
   align-items: center;
   position: relative;
 }
+nav .nav-container .nav-menu {
+  transition: 1s;
+}
 nav .nav-container .nav-menu ul {
   display: flex;
   gap: 15px;
@@ -39,9 +42,10 @@ nav .nav-container .nav-menu ul li {
   color: #141517;
   font-weight: 600;
   padding: 12px 15px;
+  transition: 1s;
 }
 nav .nav-container .nav-menu ul li a {
-  transition: 1s ease;
+  transition: 1s;
 }
 nav .nav-container .nav-menu ul li a:hover {
   border-bottom: 2px solid black;
@@ -57,6 +61,9 @@ nav .nav-container .nav-right .nav-icons {
 }
 nav .nav-container .nav-right .nav-icons i {
   font-size: 18px;
+}
+nav .nav-container .nav-right .nav-icons .user-name {
+  color: red;
 }
 nav .nav-container .nav-right .nav-hamburger {
   display: none;
@@ -1019,7 +1026,6 @@ footer .myContainer .footer-container .min-footer p span:hover {
   gap: 20px;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-between;
 }
 #basket-section .myContainer .basket-container .basket-cardsBox .slider-card {
   max-width: 260px;
@@ -1381,6 +1387,9 @@ footer .myContainer .footer-container .min-footer p span:hover {
 #admin_panel-section {
   background-color: #152036;
 }
+#admin_panel-section .myContainer {
+  padding: 0;
+}
 #admin_panel-section .myContainer .adminPanel-container {
   font-family: "Jost", sans-serif;
   text-align: center;
@@ -1398,6 +1407,7 @@ footer .myContainer .footer-container .min-footer p span:hover {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 #admin_panel-section .myContainer .adminPanel-container .adminPanel-nav-menu h1 {
   font-size: 30px;
@@ -1459,12 +1469,28 @@ footer .myContainer .footer-container .min-footer p span:hover {
   border-right: 1px solid #152036;
   padding-right: 10px;
 }
+#admin_panel-section .myContainer .adminPanel-container .left-menu-hamburger {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 34.7px;
+  padding: 7px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+}
+#admin_panel-section .myContainer .adminPanel-container .left-menu-hamburger i {
+  font-size: 20px;
+  padding-right: 26px;
+}
 #admin_panel-section .myContainer .adminPanel-container .breadcome-list {
   max-width: 1050px;
   width: 100%;
   background-color: #1b2a47;
   margin-left: auto;
-  margin-top: 65px;
+  margin-top: 80px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -1519,7 +1545,7 @@ footer .myContainer .footer-container .min-footer p span:hover {
   align-items: center;
   justify-content: space-between;
   background-color: #1b2a47;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 1px solid #152036;
 }
 #admin_panel-section .myContainer .adminPanel-container .product_table .table-header h4 {
@@ -1564,12 +1590,92 @@ footer .myContainer .footer-container .min-footer p span:hover {
 }
 #admin_panel-section .myContainer .adminPanel-container .admin_panel-footer {
   background-color: #1b2a47;
-  margin-top: 30px;
   color: #fff;
   padding: 30px;
   margin-right: 0;
 }
 
+@media screen and (max-width: 1300px) {
+  #admin_panel-section {
+    height: 100vh;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu {
+    display: none;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu.active-left-menu {
+    width: 100%;
+    display: block;
+    height: 420px;
+    margin-top: 10px;
+    padding-top: 50px;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu.active-left-menu ul li {
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu.active-left-menu .profile-setting {
+    padding: 20px 0;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu.active-left-menu .profile-setting img {
+    width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .left-menu-hamburger {
+    display: flex;
+    left: 0;
+    right: 0;
+    position: fixed;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .left-menu-hamburger i {
+    font-size: 20px;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .breadcome-list {
+    display: none;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .product_table {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 400px;
+    margin-top: 80px;
+  }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-button {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(13, 24, 56);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #081757;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 7px;
+  background: rgb(13, 24, 56);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: rgb(13, 24, 56);
+}
+
+#admin_panel-section .myContainer {
+  padding: 0;
+}
 #admin_panel-section .myContainer .adminPanel-container .product_table {
   padding: 20px;
 }
@@ -1580,10 +1686,12 @@ footer .myContainer .footer-container .min-footer p span:hover {
   justify-content: space-between;
   gap: 20px;
 }
-#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data, #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data {
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data,
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data {
   width: 50%;
 }
-#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data input, #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data input {
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data input,
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data input {
   background-color: #152036;
   border: 1px solid #152036;
   border-radius: 1px;
@@ -1595,7 +1703,254 @@ footer .myContainer .footer-container .min-footer p span:hover {
   color: #fff;
   margin: 10px;
 }
-#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data .submit-btn, #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data .submit-btn {
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data .submit-btn,
+#admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data .submit-btn {
   cursor: pointer;
   background-color: #0d1525;
+}
+
+@media screen and (max-width: 576px) {
+  #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 300px;
+  }
+  #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data,
+  #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data {
+    width: 100%;
+  }
+}
+#blog-section .myContainer .blog-container {
+  width: 100%;
+  display: grid;
+  padding: 100px 0 40px 0;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: "Muli", sans-serif;
+}
+#blog-section .myContainer .blog-container .blog-card {
+  max-width: 380px;
+  width: 100%;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+#blog-section .myContainer .blog-container .blog-card .blog-imgBox {
+  transition: 0.5s;
+}
+#blog-section .myContainer .blog-container .blog-card .blog-imgBox img {
+  max-width: 380px;
+  width: 100%;
+}
+#blog-section .myContainer .blog-container .blog-card .blog-imgBox:hover {
+  transform: scale(1.2);
+}
+#blog-section .myContainer .blog-container .blog-card .blog-contentBox {
+  margin-top: 20px;
+  max-width: 400px;
+}
+#blog-section .myContainer .blog-container .blog-card .blog-contentBox a h4 {
+  font-size: 22px;
+  color: #252525;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+#blog-section .myContainer .blog-container .blog-card .blog-contentBox p {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e7ab3c;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+#blog-section .myContainer .blog-container .blog-card .blog-contentBox p span {
+  font-size: 16px;
+  line-height: 26px;
+  color: #b2b2b2;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1200px) {
+  #blog-section .myContainer .blog-container {
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  #blog-section .myContainer .blog-container .blog-card {
+    max-width: 400px;
+    width: 100%;
+  }
+  #blog-section .myContainer .blog-container .blog-card .blog-imgBox img {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #blog-section .myContainer .blog-container {
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+  }
+  #blog-section .myContainer .blog-container .blog-card .blog-contentBox {
+    margin-top: 20px;
+    max-width: 400px;
+  }
+  #blog-section .myContainer .blog-container .blog-card .blog-contentBox a h4 {
+    font-size: 18px;
+  }
+}
+#concat-section .myContainer .concat-container {
+  padding-top: 40px;
+  font-family: "Muli", sans-serif;
+}
+#concat-section .myContainer .concat-container .concat-map {
+  position: relative;
+  height: 600px;
+  margin-bottom: 80px;
+}
+#concat-section .myContainer .concat-container .concat-map iframe {
+  width: 100%;
+}
+#concat-section .myContainer .concat-container .concat-map .map-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+#concat-section .myContainer .concat-container .concat-map .map-icon i {
+  font-size: 48px;
+  color: #e7ab3c;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-address {
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-header {
+  margin-bottom: 30px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-header h4 {
+  color: #252525;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-header p {
+  font-size: 16px;
+  color: #636363;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-information {
+  width: 100%;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-information .address-item {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  box-shadow: 0px 8px 35px 10px #e8e8e8;
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-information .address-item .item-icon i {
+  font-size: 30px;
+  color: #b2b2b2;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-information .address-item .item-text span {
+  color: #b2b2b2;
+  font-size: 16px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-information .address-item .item-text p {
+  font-size: 18px;
+  color: #252525;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-comment {
+  max-width: 585px;
+  width: 100%;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-comment .comment-header {
+  margin-bottom: 30px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-comment .comment-header h4 {
+  color: #252525;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-comment .comment-header p {
+  font-size: 16px;
+  color: #636363;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-comment .comment-form .form-input {
+  width: 100%;
+  gap: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-comment .comment-form .form-input input {
+  width: 100%;
+  font-size: 16px;
+  color: #636363;
+  height: 50px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-comment .comment-form textarea {
+  width: 100%;
+  resize: none;
+  color: #636363;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 16px;
+  height: 150px;
+  padding-top: 10px;
+  margin-bottom: 35px;
+  font-family: "Muli", sans-serif;
+}
+#concat-section .myContainer .concat-container .concat-elementsBox .concat-comment .comment-form button {
+  color: #ffffff;
+  background: #e7ab3c;
+  border: 1px solid #e7ab3c;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 45px;
+}
+
+@media screen and (max-width: 992px) {
+  #concat-section .myContainer .concat-container .concat-elementsBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  #concat-section .myContainer .concat-container .concat-elementsBox .concat-address {
+    max-width: 585px;
+  }
+  #concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-information {
+    width: 100%;
+  }
+  #concat-section .myContainer .concat-container .concat-elementsBox .concat-address .address-information .address-item .item-text p {
+    font-size: 16px;
+  }
 }

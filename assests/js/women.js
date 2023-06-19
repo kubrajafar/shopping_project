@@ -85,25 +85,31 @@ async function klikBtn() {
           DataResult.push(data[i]);
         }
       }
+      
+      if (DataResult.length <= 12) {
+        for (let i = 0; i < DataResult.length; i++) {
+          cardsData(DataResult[i]);
+        }
+      } else {
+        let result = DataResult.length / 12 - 1;
 
-      let result = DataResult.length / 12 - 1;
+        for (let i = 0; i < result; i++) {
+          result * circleAdd();
+        }
 
-      for (let i = 0; i < result; i++) {
-        result * circleAdd();
-      }
+        for (let i = 0; i < 12; i++) {
+          cardsData(DataResult[i]);
+        }
 
-      for (let i = 0; i < 12; i++) {
-        cardsData(DataResult[i]);
-      }
-
-      for (let i = 0; i < cricleBoxChildren.length; i++) {
-        cricleBoxChildren[i].addEventListener("click", (e) => {
-          let targetDiv = +e.target.id * 12;
-          shopPage_container.innerHTML = "";
-          for (let j = targetDiv; j < targetDiv + 12; j++) {
-            DataResult[j] ? cardsData(DataResult[j]) : null;
-          }
-        });
+        for (let i = 0; i < cricleBoxChildren.length; i++) {
+          cricleBoxChildren[i].addEventListener("click", (e) => {
+            let targetDiv = +e.target.id * 12;
+            shopPage_container.innerHTML = "";
+            for (let j = targetDiv; j < targetDiv + 8; j++) {
+              DataResult[j] ? cardsData(DataResult[j]) : null;
+            }
+          });
+        }
       }
     });
 

@@ -1,4 +1,10 @@
 const tbody = document.querySelector(".tbody");
+const left_menu_hamburger = document.querySelector(".left-menu-hamburger");
+const adminPanel_left_menu = document.querySelector(".adminPanel-left-menu");
+
+left_menu_hamburger.addEventListener("click", () => {
+  adminPanel_left_menu.classList.toggle("active-left-menu");
+});
 
 fetch("http://localhost:3000/itemsData")
   .then((res) => res.json())
@@ -38,21 +44,12 @@ function tableData(data) {
   tr.append(img, gender, name, type, price, stock, edit, del);
 
   del.onclick = () => {
-    console.log(del.parentElement);
     del.parentElement.remove();
 
     fetch("http://localhost:3000/itemsData/" + data.id, { method: "Delete" })
       .then((res) => res.json())
-      .then(
-        fetch("http://localhost:3000/itemsData", {
-          method: "Get",
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            data.forEach((elem) => {
-              tableData(elem);
-            });
-          })
-      );
+      .then((data) => {
+        console.log(data);
+      });
   };
 }

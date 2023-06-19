@@ -1,13 +1,12 @@
 #admin_panel-section {
   background-color: #152036;
   .myContainer {
+    padding: 0;
     .adminPanel-container {
       font-family: "Jost", sans-serif;
       text-align: center;
       padding-top: 50px;
       width: 100%;
-
-      
       .adminPanel-nav-menu {
         width: 100%;
         background-color: #1b2a47;
@@ -19,11 +18,12 @@
         top: 0;
         left: 0;
         right: 0;
-        h1{
+        z-index: 10;
+        h1 {
           font-size: 30px;
           color: #fff;
-         
-          font-family: 'Sofia', cursive;
+
+          font-family: "Sofia", cursive;
         }
         .right-menu {
           display: flex;
@@ -86,12 +86,28 @@
           }
         }
       }
+      .left-menu-hamburger {
+        width: 100%;
+        background-color: #fff;
+        margin-top: 34.7px;
+        padding: 7px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+        display: none;
+        i {
+          font-size: 20px;
+          padding-right: 26px;
+        }
+      }
       .breadcome-list {
         max-width: 1050px;
         width: 100%;
         background-color: #1b2a47;
         margin-left: auto;
-        margin-top: 65px;
+        margin-top: 80px;
         color: #fff;
         display: flex;
         align-items: center;
@@ -124,7 +140,7 @@
             border: 1px solid transparent;
             border-radius: 4px;
             background-color: #152036;
-            i{
+            i {
               color: #fff;
               font-size: 20px;
             }
@@ -147,13 +163,13 @@
           align-items: center;
           justify-content: space-between;
           background-color: #1b2a47;
-          padding: 20px;
+          padding: 10px;
           border-bottom: 1px solid #152036;
           h4 {
             font-weight: 700;
             font-size: 20px;
           }
-          a{
+          a {
             padding: 7px 15px;
             font-size: 15px;
             font-weight: 400;
@@ -194,17 +210,96 @@
           }
         }
       }
-      .admin_panel-footer{
-    
+      .admin_panel-footer {
         background-color: #1b2a47;
-             
-        margin-top: 30px;
+
         color: #fff;
         padding: 30px;
         margin-right: 0;
-
-
       }
     }
   }
+}
+
+@media screen and (max-width: 1300px) {
+  #admin_panel-section {
+    height: 100vh;
+    .myContainer {
+      .adminPanel-container {
+        .adminPanel-left-menu {
+          display: none;
+
+          &.active-left-menu {
+            width: 100%;
+            display: block;
+            height: 420px;
+            margin-top: 10px;
+
+            padding-top: 50px;
+            ul {
+              li {
+                text-align: left;
+                padding: 5px;
+                font-size: 15px;
+              }
+            }
+            .profile-setting {
+              padding: 20px 0;
+              img {
+                width: 60px;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+        .left-menu-hamburger {
+          display: flex;
+          left: 0;
+          right: 0;
+          position: fixed;
+          i {
+            font-size: 20px;
+          }
+        }
+        .breadcome-list {
+          display: none;
+        }
+
+        .product_table {
+          max-width: 100%;
+          overflow-x: auto;
+          overflow-y: auto;
+          height: 400px;
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(13, 24, 56);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #081757;
+}
+::-webkit-scrollbar:horizontal {
+  height: 7px;
+  background: rgb(13, 24, 56);
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background: rgb(13, 24, 56);
 }
