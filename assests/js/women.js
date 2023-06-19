@@ -7,6 +7,9 @@ const handbag = document.querySelector("#handbag");
 const shoes = document.querySelector("#shoes");
 const accessories = document.querySelector("#accessories");
 
+const search_input = document.querySelector(".search-input");
+const search_btn = document.querySelector(".search-btn");
+
 let basket_arr = [];
 let wishlist_arr = [];
 
@@ -81,11 +84,12 @@ async function klikBtn() {
       let DataResult = [];
 
       for (let i = 0; i < data.length; i++) {
-        if (data[i].gender === "women") {
+
+        if (data[i]?.gender === "women") {
           DataResult.push(data[i]);
         }
       }
-      
+
       if (DataResult.length <= 12) {
         for (let i = 0; i < DataResult.length; i++) {
           cardsData(DataResult[i]);
@@ -121,6 +125,24 @@ async function klikBtn() {
       cricleBoxChildren[i].classList.add("activeBtn");
     });
   }
+
+  search_input.addEventListener("keyup", (e) => {
+    const boxes = document.querySelectorAll(".slider-card");
+    boxes.forEach((element) => {
+      console.log(element);
+
+      if (
+        element.children[1].children[0].innerText
+          .toLowerCase()
+          .includes(search_input.value.toLowerCase())
+      ) {
+        console.log(element.productType);
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    });
+  });
 }
 function circleAdd() {
   const btn = document.createElement("button");
@@ -163,6 +185,7 @@ handbag.addEventListener("click", () => {
 shoes.addEventListener("click", () => {
   const boxes = document.querySelectorAll(".slider-card");
   boxes.forEach((element) => {
+    console.log(element.getAttribute("data-type"));
     if (element.getAttribute("data-type") === "shoes") {
       element.style.display = "block";
     } else {

@@ -6,6 +6,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
     .slider-one {
       width: 100%;
       height: 100vh;
@@ -256,18 +257,19 @@
             max-width: 260px;
             width: 100%;
             text-align: center;
+            border: 1px solid #b2b2b2;
             .img-link {
               .card-img {
                 max-width: 260px;
-
-                width: 100%;
+width: 100%;
+                
               }
             }
 
             .card-content {
               font-family: "Mulish", sans-serif;
               padding-top: 14px;
-              border: 1px solid #b2b2b2;
+              border-top: 1px solid #b2b2b2;
               .name-link {
                 .card-product-name {
                   font-size: 16px;

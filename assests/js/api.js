@@ -60,25 +60,25 @@ async function dataCard() {
     ],
   });
 
-  search_input.addEventListener("keyup", (e) => {
-    const boxes = document.querySelectorAll(".slider-card");
-    console.log(boxes);
-    for (let i = 0; i < boxes.length; i++) {
-      data[i].forEach((element) => {
-        console.log(boxes[i]);
-        if (
-          element.productType
-            .toLowerCase()
-            .includes(search_input.value.toLowerCase())
-        ) {
-          console.log(element.productType);
-          boxes[i].style.display = "flex";
-        } else {
-          boxes[i].style.display = "none";
-        }
-      });
-    }
-  });
+  // search_input.addEventListener("keyup", (e) => {
+  //   const boxes = document.querySelectorAll(".slider-card");
+  //   console.log(boxes);
+  //   for (let i = 0; i < boxes.length; i++) {
+  //     data[i].forEach((element) => {
+  //       console.log(boxes[i]);
+  //       if (
+  //         element.productType
+  //           .toLowerCase()
+  //           .includes(search_input.value.toLowerCase())
+  //       ) {
+  //         console.log(element.productType);
+  //         boxes[i].style.display = "flex";
+  //       } else {
+  //         boxes[i].style.display = "none";
+  //       }
+  //     });
+  //   }
+  // });
 }
 
 function cardsData(data) {
@@ -95,8 +95,8 @@ function cardsData(data) {
 
   
 
-  img_btn_link.href = "./details.html#" + data.id;
-  name_btn_link.href = "./details.html#" + data.id;
+  img_btn_link.href = "./details.html#" + data?.id;
+  name_btn_link.href = "./details.html#" + data?.id;
 
   slider_card.classList.add("slider-card");
   img_btn_link.classList.add("img-link");
@@ -109,9 +109,9 @@ function cardsData(data) {
   wishlist_btn.classList.add("wishlist-btn");
   basket_btn.classList.add("basket-btn");
 
-  card_img.setAttribute("src", data.productImg);
-  card_product_name.innerText = data.productName;
-  card_product_price.innerText = data.productPrice;
+  card_img.setAttribute("src", data?.productImg);
+  card_product_name.innerText = data?.productName;
+  card_product_price.innerText = data?.productPrice;
   wishlist_btn.innerHTML = `<i class="fa-regular fa-heart"></i>`;
   basket_btn.innerHTML = `<i class="fa-solid fa-cart-plus"></i>`;
 

@@ -2,6 +2,8 @@ let shopPage_container = document.querySelector(".shopPage-container");
 const circleBox = document.querySelector(".circleBox");
 let cricleBoxChildren = circleBox.children;
 
+const search_input = document.querySelector(".search-input");
+const search_btn = document.querySelector(".search-btn");
 let basket_arr = [];
 let wishlist_arr = [];
 
@@ -114,6 +116,24 @@ async function klikBtn() {
       cricleBoxChildren[i].classList.add("activeBtn");
     });
   }
+
+  search_input.addEventListener("keyup", (e) => {
+    const boxes = document.querySelectorAll(".slider-card");
+    boxes.forEach((element) => {
+      console.log(element);
+
+      if (
+        element.children[1].children[0].innerText
+          .toLowerCase()
+          .includes(search_input.value.toLowerCase())
+      ) {
+        console.log(element.productType);
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    });
+  });
 }
 function circleAdd() {
   const btn = document.createElement("button");

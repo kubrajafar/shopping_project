@@ -1,9 +1,12 @@
 #admin_panel-section {
+ 
   .myContainer {
     padding: 0;
     .adminPanel-container {
       .product_table {
         padding: 20px;
+        min-height: 200px;
+   
         .submit-form {
           width: 100%;
           padding: 20px;
@@ -30,6 +33,7 @@
             .submit-btn {
               cursor: pointer;
               background-color: #0d1525;
+              margin-bottom: 10px;
             }
           }
         }
@@ -42,12 +46,13 @@
     .myContainer {
       .adminPanel-container {
         .product_table {
+
           .submit-form {
             flex-direction: column;
             padding: 0;
             gap: 0;
-            overflow-y: hidden;
-            overflow-x: hidden;
+            overflow-y: initial;
+            overflow-x: initial;
             height: 300px;
             .product_one-data,
             .product_two-data {

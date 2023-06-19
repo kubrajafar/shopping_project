@@ -1,8 +1,9 @@
 #admin_panel-section {
   background-color: #152036;
+  padding-bottom: 20px;
   .myContainer {
-    padding: 0;
-    .adminPanel-container {
+    padding: 0 !important;
+   .adminPanel-container {
       font-family: "Jost", sans-serif;
       text-align: center;
       padding-top: 50px;
@@ -183,7 +184,6 @@
         .table {
           width: 100%;
           border-collapse: collapse;
-
           thead {
             width: 100%;
             margin-top: 10px;
@@ -210,20 +210,23 @@
           }
         }
       }
-      .admin_panel-footer {
-        background-color: #1b2a47;
-
-        color: #fff;
-        padding: 30px;
-        margin-right: 0;
-      }
     }
   }
 }
-
+.admin_panel-footer {
+z-index: 4;
+  background-color: #1b2a47;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 30px;
+  margin-right: 0;
+}
 @media screen and (max-width: 1300px) {
   #admin_panel-section {
-    height: 100vh;
+
     .myContainer {
       .adminPanel-container {
         .adminPanel-left-menu {
@@ -267,10 +270,11 @@
         }
 
         .product_table {
+         
           max-width: 100%;
           overflow-x: auto;
           overflow-y: auto;
-          height: 400px;
+          height: 500px;
           margin-top: 80px;
         }
       }

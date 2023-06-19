@@ -253,6 +253,7 @@ footer .myContainer .footer-container .min-footer p span:hover {
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 #fashion-slider .slider-container .slider-one {
   width: 100%;
@@ -484,6 +485,7 @@ footer .myContainer .footer-container .min-footer p span:hover {
   max-width: 260px;
   width: 100%;
   text-align: center;
+  border: 1px solid #b2b2b2;
 }
 #trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .img-link .card-img {
   max-width: 260px;
@@ -492,7 +494,7 @@ footer .myContainer .footer-container .min-footer p span:hover {
 #trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content {
   font-family: "Mulish", sans-serif;
   padding-top: 14px;
-  border: 1px solid #b2b2b2;
+  border-top: 1px solid #b2b2b2;
 }
 #trending-section .myContainer .trending-container .trending-content .cards-slider .slider-card .card-content .name-link .card-product-name {
   font-size: 16px;
@@ -1386,9 +1388,10 @@ footer .myContainer .footer-container .min-footer p span:hover {
 }
 #admin_panel-section {
   background-color: #152036;
+  padding-bottom: 20px;
 }
 #admin_panel-section .myContainer {
-  padding: 0;
+  padding: 0 !important;
 }
 #admin_panel-section .myContainer .adminPanel-container {
   font-family: "Jost", sans-serif;
@@ -1588,17 +1591,20 @@ footer .myContainer .footer-container .min-footer p span:hover {
 #admin_panel-section .myContainer .adminPanel-container .product_table .table tbody tr td {
   padding: 5px;
 }
-#admin_panel-section .myContainer .adminPanel-container .admin_panel-footer {
+
+.admin_panel-footer {
+  z-index: 4;
   background-color: #1b2a47;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   padding: 30px;
   margin-right: 0;
 }
 
 @media screen and (max-width: 1300px) {
-  #admin_panel-section {
-    height: 100vh;
-  }
   #admin_panel-section .myContainer .adminPanel-container .adminPanel-left-menu {
     display: none;
   }
@@ -1638,7 +1644,7 @@ footer .myContainer .footer-container .min-footer p span:hover {
     max-width: 100%;
     overflow-x: auto;
     overflow-y: auto;
-    height: 400px;
+    height: 500px;
     margin-top: 80px;
   }
 }
@@ -1678,6 +1684,7 @@ footer .myContainer .footer-container .min-footer p span:hover {
 }
 #admin_panel-section .myContainer .adminPanel-container .product_table {
   padding: 20px;
+  min-height: 200px;
 }
 #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form {
   width: 100%;
@@ -1707,6 +1714,7 @@ footer .myContainer .footer-container .min-footer p span:hover {
 #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_two-data .submit-btn {
   cursor: pointer;
   background-color: #0d1525;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 576px) {
@@ -1714,8 +1722,8 @@ footer .myContainer .footer-container .min-footer p span:hover {
     flex-direction: column;
     padding: 0;
     gap: 0;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-y: initial;
+    overflow-x: initial;
     height: 300px;
   }
   #admin_panel-section .myContainer .adminPanel-container .product_table .submit-form .product_one-data,
