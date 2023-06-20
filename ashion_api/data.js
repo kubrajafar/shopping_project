@@ -43,31 +43,9 @@ module.exports = [
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
-  {
-    id: 5,
-    stock: 3,
-    gender: "women",
-    productType: "shirt",
-    productImg: "http://localhost:3000/shirt_1.jpg",
-    productName: "white shirt",
-    productPrice: "$24.00",
-    productAbout:
-      "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },
 
   {
-    id: 6,
-    stock: 4,
-    gender: "women",
-    productType: "dress",
-    productImg: "http://localhost:3000/dress_2.jpg",
-    productName: "zebra pattern dress",
-    productPrice: "$52.00",
-    productAbout:
-      "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },
-  {
-    id: 7,
+    id: 5,
     stock: 4,
     gender: "women",
     productType: "accessories",
@@ -78,7 +56,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 8,
+    id: 6,
     stock: 3,
     gender: "men",
     productType: "bag",
@@ -89,7 +67,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 9,
+    id: 7,
     stock: 4,
     gender: "women",
     productType: "shirt",
@@ -100,7 +78,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 10,
+    id: 8,
     stock: 4,
     gender: "women",
     productType: "dress",
@@ -110,30 +88,9 @@ module.exports = [
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
+
   {
-    id: 11,
-    stock: 4,
-    gender: "women",
-    productType: "accessories",
-    productImg: "http://localhost:3000/accesories_4.jpg",
-    productName: "sunglasses",
-    productPrice: "$14.00",
-    productAbout:
-      "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },
-  {
-    id: 12,
-    stock: 4,
-    gender: "women",
-    productType: "shirt",
-    productImg: "http://localhost:3000/shirt_3.jpg",
-    productName: "low shoulder shirt",
-    productPrice: "$14.00",
-    productAbout:
-      "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },
-  {
-    id: 13,
+    id: 9,
     stock: 4,
     gender: "women",
     productType: "bag",
@@ -145,7 +102,7 @@ module.exports = [
   },
 
   {
-    id: 14,
+    id: 10,
     stock: 3,
     gender: "men",
     productType: "shoes",
@@ -156,7 +113,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 15,
+    id: 11,
     stock: 4,
     gender: "women",
     productType: "accesories",
@@ -167,7 +124,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 16,
+    id: 12,
     stock: 4,
     gender: "women",
     productType: "bag",
@@ -178,18 +135,18 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 17,
+    id: 13,
     stock: 3,
     gender: "men",
     productType: "shirt",
     productImg: "http://localhost:3000/shirt_1_men.jpg",
-    productName: "ühite shirt",
+    productName: "white shirt",
     productPrice: "$24.00",
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 18,
+    id: 14,
     stock: 4,
     gender: "women",
     productType: "shoes",
@@ -200,7 +157,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 19,
+    id: 15,
     stock: 4,
     gender: "women",
     productType: "shirt",
@@ -211,7 +168,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 20,
+    id: 16,
     stock: 3,
     gender: "men",
     productType: "accesories",
@@ -221,19 +178,9 @@ module.exports = [
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
+
   {
-    id: 21,
-    stock: 4,
-    gender: "women",
-    productType: "bag",
-    productImg: "http://localhost:3000/handbag_3.jpg",
-    productName: "chain bag Bag",
-    productPrice: "$31.00",
-    productAbout:
-      "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },
-  {
-    id: 22,
+    id: 17,
     stock: 4,
     gender: "women",
     productType: "shirt",
@@ -244,7 +191,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 23,
+    id: 18,
     stock: 3,
     gender: "men",
     productType: "bag",
@@ -255,7 +202,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 24,
+    id: 19,
     stock: 4,
     gender: "women",
     productType: "shoes",
@@ -267,7 +214,7 @@ module.exports = [
   },
 
   {
-    id: 25,
+    id: 20,
     stock: 4,
     gender: "women",
     productType: "bag",
@@ -278,7 +225,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 26,
+    id: 21,
     stock: 4,
     gender: "women",
     productType: "shirt",
@@ -290,7 +237,7 @@ module.exports = [
   },
 
   {
-    id: 27,
+    id: 22,
     stock: 3,
     gender: "men",
     productType: "shirt",
@@ -301,7 +248,7 @@ module.exports = [
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
   {
-    id: 28,
+    id: 23,
     stock: 4,
     gender: "women",
     productType: "shirt",
@@ -311,20 +258,9 @@ module.exports = [
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
-  {
-    id: 29,
-    stock: 4,
-    gender: "women",
-    productType: "shoes",
-    productImg: "http://localhost:3000/shoes_1.jpg",
-    productName: "casual shoes",
-    productPrice: "$11.00",
-    productAbout:
-      "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
-  },
 
   {
-    id: 30,
+    id: 24,
     stock: 3,
     gender: "men",
     productType: "shoes",
