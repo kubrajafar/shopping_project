@@ -93,8 +93,6 @@ function cardsData(data) {
   const wishlist_btn = document.createElement("div");
   const basket_btn = document.createElement("div");
 
-  
-
   img_btn_link.href = "./details.html#" + data?.id;
   name_btn_link.href = "./details.html#" + data?.id;
 

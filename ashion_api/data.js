@@ -43,7 +43,6 @@ module.exports = [
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
-
   {
     id: 5,
     stock: 4,
@@ -88,7 +87,6 @@ module.exports = [
     productAbout:
       "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.",
   },
-
   {
     id: 9,
     stock: 4,
